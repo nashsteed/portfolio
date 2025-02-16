@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
-import '/Users/nashsteed/Documents/portfolio-site/src/components/Portfolio/Postcards/index.scss'
+import '../../../components/Portfolio/Postcards/index.scss'
 import BB from '../../../assets/images/bbking-mock.png'
 import trophy from '../../../assets/images/trophy.png'
 import spectre from '../../../assets/images/spectre.png'
