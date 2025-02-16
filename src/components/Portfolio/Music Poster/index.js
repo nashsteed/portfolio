@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
-import '/Users/nashsteed/Documents/portfolio-site/src/components/Portfolio/Postcards/index.scss'
+import '../../../components/Portfolio/Postcards/index.scss'
 import BB from '../../../assets/images/BB KING.png'
 
 import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.png'

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import '/Users/nashsteed/Documents/portfolio-site/src/components/Portfolio/Postcards/index.scss';
-import '/Users/nashsteed/Documents/portfolio-site/src/components/Portfolio/index.scss';
-import '/Users/nashsteed/Documents/portfolio-site/src/components/Portfolio/DeepWaters/index.scss';
+import '../../../components/Portfolio/Postcards/index.scss'
+import '../../../components/Portfolio/index.scss'
+import '../../../components/Portfolio/DeepWaters/index.scss'
 import deepWatersMock from '../../../assets/images/DeepWatersMock.png';
 import BB from '../../../assets/images/BB KING.png';
 import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.png';
