@@ -1,0 +1,43 @@
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
+import Layout from './components/Layout'
+import Contact from './components/Contact'
+import Dashboard from './components/Dashboard'
+import Portfolio from './components/Portfolio'
+import Postcards from './components/Portfolio/Postcards'
+import './App.scss'
+import MusicPoster from './components/Portfolio/Music Poster'
+import JamesBond from './components/Portfolio/JamesBond'
+import MGCSShirts from './components/Portfolio/MGCSShirts'
+import MeantToBee from './components/Portfolio/MeantToBe'
+import DeepWaters from './components/Portfolio/DeepWaters'
+import ATANCMay from './components/Portfolio/ATANCMay'
+import About from './components/Portfolio/About'
+import Music from './components/Portfolio/Music'
+import Art from './components/Portfolio/Art'
+
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path ="contact" index element={<Contact />} />
+          <Route path ="portfolio" index element={<Portfolio />} />
+          <Route path="portfolio/city-postcards" element={<Postcards />} />
+          <Route path="portfolio/bb-king-poster" element={<MusicPoster />} />
+          <Route path="portfolio/james-bond-books" element={<JamesBond />} />
+          <Route path="portfolio/mgcs-shirts" element={<MGCSShirts />} />
+          <Route path="portfolio/meant-to-bee" element={<MeantToBee />} />
+          <Route path="portfolio/deep-waters" element={<DeepWaters />} />
+          <Route path="portfolio/atanc-national-tennis-month" element={<ATANCMay />} />
+          <Route path="about" element={<About />} />
+          <Route path="music" element={<Music />} />
+          <Route path="art" element={<Art />} />
+        </Route>
+      </Routes>
+    </>
+  )
+}
+
+export default App

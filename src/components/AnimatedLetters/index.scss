@@ -1,0 +1,33 @@
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.text-non-animate {
+  display: inline-block;
+  opacity: 1;
+  min-width: 10px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+
+  // &:hover {
+  //   animation: fade 1s;
+  //   -webkit-text-stroke: 2px #d6b588;
+  //   color: transparent;
+  //   //color: #d6b588;
+  // }
+}
+
+@for $i from 1 through 35 {
+  .text-animate._#{$i} {
+    animation-delay: #{$i / 20}s;
+  }
+}

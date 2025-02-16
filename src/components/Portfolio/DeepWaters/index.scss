@@ -1,0 +1,69 @@
+.slideshow-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .arrow-button {
+    display: block;
+    top: 50%;
+    color: #000;
+    border: none;
+    padding: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  /* Enlarge the arrow on hover */
+  .arrow-button:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Position left arrow */
+  .arrow-button.left {
+    left: 100px; /* 50px from the left side of the screen */
+  }
+  
+  /* Position right arrow */
+  .arrow-button.right {
+    right: 100px; /* 10px from the right side of the screen */
+  }
+  
+  /* Removing outline when arrows are focused */
+  .arrow-button:focus {
+    outline: none;
+  }
+
+  .portfolio-item-large2 {
+    position: relative; /* This is crucial for absolute positioning of arrows */
+  }
+  
+  .slideshow-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: #000; /* Or whatever color you'd like for the arrows */
+    cursor: pointer;
+    z-index: 1; /* Ensure arrows are above the image */
+  }
+  
+  .arrow-button.left {
+    left: 10px; /* Position left arrow */
+  }
+  
+  .arrow-button.right {
+    right: 10px; /* Position right arrow */
+  }
+  
+  .portfolio-detail-item {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  

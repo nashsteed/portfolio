@@ -1,0 +1,177 @@
+.home-page {
+
+
+  justify-content: center;
+
+  &.gradient-background {
+    background: #e6e6dd;
+    //background: linear-gradient(180deg, #88A9D6 70%, #fff);
+    background-size: 120% 120%;
+    animation: gradient-animation 2s ease infinite;
+    height: 100vh; /* Ensure it covers the full height of the viewport */
+    width: 100%;
+    position: relative;
+  }
+  
+  
+  .text-zone {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    max-height: 90%;
+    text-align: center;
+    display: block;
+    justify-content: space-between; /* Distribute buttons evenly */
+    align-items: center; /* Vertically align buttons to the center */
+  }
+
+  h1 {
+    color: #88A9D6;
+    font-size: 75px;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Greycliff';
+    font-weight: 400;
+
+
+    img {
+      margin-left: 20px;
+      opacity: 0;
+      width: 32px;
+      height: auto;
+      animation: rotateIn 1s linear both;
+    }
+  }
+
+  h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Greycliff';
+    font-weight: 400;
+
+  }
+
+
+  .flat-button {
+    color: #e6e6dd;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: 'Greycliff';
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid #d6b588;
+    border-radius: 5px;
+    margin-top: 25px;
+    float: right; /* Default float to the right for the second button */
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+    margin-right: 100px;
+
+   
+
+    &:hover {
+      background: #fff;
+      border: 2px solid #fff;
+      color: #d6b588;
+    }
+
+    &.left {
+      float: left;
+      margin-left: 100px; 
+      margin-right: 0px;/* Apply left float for the left-aligned button */
+    }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1:before,
+  .home-page h1:after {
+    display: none;
+  }
+
+  .home-page .text-zone {
+    position: initial;
+    width: 100%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .home-page .flat-button {
+    float: none;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 124px;
+  }
+
+  .logo-container {
+    position: relative;
+    width: 100px;
+    height: auto;
+    top: 50px;
+    right: 0;
+    box-sizing: border-box;
+    margin: auto;
+    left: 0;
+  }
+
+  .logo-container svg {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+  }
+}
+.center{
+  margin-top: 100px !important;
+  margin-right: 0px !important;
+  left: 50% !important;
+  position: absolute !important;
+  transform: translateX(-50%);
+  background: #D05353;
+  border: #D05353 !important;
+}
+
+.left{
+background: #537A5A;
+border:  #537A5A !important;
+}
+
+.right{
+  background: #424874;
+  border: #424874 !important;
+}
+
+
+
+}
