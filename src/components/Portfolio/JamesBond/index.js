@@ -20,7 +20,7 @@ const JamesBond = () => {
   <div className="portfolio-item-grid">
 
   <div className="portfolio-detail-item portfolio-item-large">
-      <img src={goldenmock} alt="Portfolio 1" className="portfolio-detail-item" />
+      <img src={goldenmock} alt="Portfolio 1" className="" />
     </div>
 
   <div className="portfolio-detail-item portfolio-item-large" align-self="center" >
@@ -29,15 +29,15 @@ const JamesBond = () => {
     </div>
 
     <div className="portfolio-detail-item portfolio-item-large2">
-      <img src={sidemockgolden} alt="Portfolio 1" className="portfolio-detail-item" />
+      <img src={sidemockgolden} alt="Portfolio 1" className="" />
     </div>
 
     <div className="portfolio-detail-item portfolio-item-large">
-      <img src={drnomock} alt="Portfolio 1" className="portfolio-detail-item" />
+      <img src={drnomock} alt="Portfolio 1" className="" />
     </div>
 
     <div className="portfolio-detail-item portfolio-item-large2">
-      <img src={sidemockdrno} alt="Portfolio 1" className="portfolio-detail-item" />
+      <img src={sidemockdrno} alt="Portfolio 1" className="" />
     </div>
 
     <div className="portfolio-detail-item portfolio-item-large2" align-self="center" >
@@ -45,11 +45,11 @@ const JamesBond = () => {
     </div>
 
     <div className="portfolio-detail-item portfolio-item-large">
-      <img src={drnoposter} alt="Portfolio 1" className="portfolio-detail-item" />
+      <img src={drnoposter} alt="Portfolio 1" className="" />
     </div>
 
     <div className="portfolio-detail-item portfolio-item-large">
-      <img src={goldenposter} alt="Portfolio 1" className="portfolio-detail-item" />
+      <img src={goldenposter} alt="Portfolio 1" className="" />
     </div>
     
     

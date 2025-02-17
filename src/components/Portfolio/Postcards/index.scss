@@ -1,5 +1,5 @@
 .portfolio-item-grid {
-  align-items: start;
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Flexible columns with min size */
  /* Automatically adjust rows */
@@ -12,6 +12,7 @@
   opacity: 0;
   animation: fadeInGrid 1.5s forwards;
   scroll-behavior: smooth; /* Fade-in effect for grid */
+  margin: 0 auto;
 
     h1 {
         color: #000;
@@ -58,4 +59,46 @@
   height: 100%;
   object-fit: contain;
   pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .portfolio-item-grid {
+    margin-top: 125px;
+    grid-template-columns: 1fr; /* Even smaller grid items */
+    padding: 10px;
+    gap: 15px;
+    display: grid; /* Even smaller gap between items */
+    max-height: 100%;
+  }
+
+  /* Make sure portfolio items remain tappable */
+  .portfolio-detail-item {
+    grid-column: span 2;
+    padding: 20px;
+    width: 100%; /* Add some padding for touch targets */
+  }
+
+
+  .portfolio-item img {
+    object-fit: contain; /* Ensure images look good in small containers */
+  }
+
+  .portfolio-item-large {
+    grid-column: span 2; /* Ensure it fits properly on small screens */
+  }
+}
+
+.nav-bar {
+  .dark {
+    background: linear-gradient(180deg, #000, transparent);
+  }
+  @media (max-width: 768px) {
+    .nav-bar {
+      /* Adjust navigation layout for smaller screens */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+}
 }

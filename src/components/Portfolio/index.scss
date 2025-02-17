@@ -1,4 +1,6 @@
 .portfolio {
+
+  max-width: 100%;;
   /* Gradient background */
   &.gradient-background {
     background-color: #e6e6dd;
@@ -31,6 +33,11 @@
   }
 }
 
+// for debugging
+// .portfolio-grid, .portfolio-item {
+//   outline: 1px solid red; /* Debugging outline */
+// }
+
 /* Portfolio Grid Styles */
 .portfolio-grid {
   align-items: start;
@@ -42,7 +49,9 @@
   width: 100%;
   box-sizing: border-box;
   max-height: 100vh;
-  overflow-y: auto; /* Enable vertical scrolling */
+  max-width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; /* Enable vertical scrolling */
   opacity: 0;
   animation: fadeInGrid 1.5s forwards;
   scroll-behavior: smooth; /* Fade-in effect for grid */
@@ -112,24 +121,23 @@
   grid-row: span 1; /* Take up 1 row */
 }
 
-.portfolio-item:nth-child(1) {
-  grid-row: 1; /* First item is at the first row */
-}
+// .portfolio-item:nth-child(1) {
+//   grid-row: 1; /* First item is at the first row */
+// }
 
-.portfolio-item:nth-child(2) {
-  grid-row: 1;
-  margin-bottom: -50px;
-  padding-bottom: 0; /* Second item goes on the same row as the first */
-}
+// .portfolio-item:nth-child(2) {
+//   grid-row: 1;
+//   padding-bottom: 0; /* Second item goes on the same row as the first */
+// }
 
-.portfolio-item:nth-child(3) {
-  grid-row: 2; /* The third item goes to the second row */ /* This ensures the 3rd item starts 50px below the 1st item */
-}
+// .portfolio-item:nth-child(3) {
+//   grid-row: 2; /* The third item goes to the second row */ /* This ensures the 3rd item starts 50px below the 1st item */
+// }
 
-.portfolio-item:nth-child(4) {
-  grid-row: 2; /* The fourth item also goes to the second row */
-  //margin-top: -275px; /* This ensures the 4th item starts 50px below the 2nd item */
-}
+// .portfolio-item:nth-child(4) {
+//   grid-row: 2; /* The fourth item also goes to the second row */
+//   //margin-top: -275px; /* This ensures the 4th item starts 50px below the 2nd item */
+// }
 
 .portfolio-item img {
   width: 100%;
@@ -144,9 +152,33 @@
 }
 
 /* Responsive Layout for Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .portfolio-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust to smaller screens */
+    margin-top: 125px;
+    grid-template-columns: 1fr; /* Even smaller grid items */
+    padding: 10px;
+    gap: 15px;
+    display: grid; /* Even smaller gap between items */
+    max-height: 100%;
+  }
+
+  /* Make sure portfolio items remain tappable */
+  .portfolio-item {
+    grid-column: span 2;
+    padding: 20px; /* Add some padding for touch targets */
+  }
+
+  .portfolio-item-large {
+    grid-column: span 2 !important;
+    padding: 20px; /* Add some padding for touch targets */
+  }
+
+  .portfolio-item img {
+    object-fit: contain; /* Ensure images look good in small containers */
+  }
+
+  .portfolio-item-large {
+    grid-column: span 1; /* Ensure it fits properly on small screens */
   }
 }
 
@@ -154,4 +186,13 @@
   .dark {
     background: linear-gradient(180deg, #000, transparent);
   }
+  @media (max-width: 768px) {
+    .nav-bar {
+      /* Adjust navigation layout for smaller screens */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+}
 }
