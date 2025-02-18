@@ -54,9 +54,13 @@ const Contact = () => {
             /></h3>
           <h2></h2>
           <h3 class="flat-square">
-            Email: nashsteed13@gmail.com
+            Email: 
             <br></br>
-            Phone: (804)-219-7366
+            nashsteed13@gmail.com
+            <br></br>
+            Phone: 
+            <br></br>
+            (804)-219-7366
           </h3>
         </div>
       </div>

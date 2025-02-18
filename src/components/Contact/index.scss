@@ -136,9 +136,15 @@
       padding: 10px;
       box-sizing: border-box;
     }
+
+    .home-page {
+      .flat-square{
+        font-size: 10px !important;
+      }
+      
+    }
   
-    .home-page .flat-button {
-      float: none;
+    .flat-button {
       display: block;
       margin: 20px auto 0 auto;
       width: 124px;
@@ -162,6 +168,43 @@
       bottom: auto;
       left: 0;
       margin: auto;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    .flat-button {
+      width: 80%;
+    }
+
+    .right {
+      width: 80%;
+      left: 50%;
+      margin-right: 0px !important;
+      margin-left: 0px !important;
+    }
+    .left {
+      width: 80%;
+      left: 50%;
+      margin-right: 0px !important;
+      margin-left: 0px !important;
+    }
+
+    .center {
+      margin-top: 135px !important;
+    }
+
+    .text-zone {
+      width: 70%;
+    }
+
+    .flat-square{
+      font-size: 14px;
     }
   }
   }

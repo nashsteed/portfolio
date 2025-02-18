@@ -126,10 +126,10 @@
   }
 
   .home-page .flat-button {
-    float: none;
     display: block;
     margin: 20px auto 0 auto;
-    width: 124px;
+    padding: 15px;
+    width: 80%;
   }
 
   .logo-container {
@@ -171,7 +171,4 @@ border:  #537A5A !important;
   background: #424874;
   border: #424874 !important;
 }
-
-
-
 }

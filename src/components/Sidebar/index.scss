@@ -1,4 +1,5 @@
 .nav-bar {
+  padding-top: 20px;
   background: transparent;
   width: 100%; /* Stretch navbar across the top */
   height: 60px; /* Set a fixed height for the top navbar */
@@ -300,7 +301,7 @@
 /* Extremely compact navbar on very small screens */
 @media screen and (max-width: 480px) {
   .nav-bar {
-    padding-top: 20px;
+    padding-top: 40px;
     height: 40px; /* Compact navbar height for very small screens */
   }
   .select-icons{
