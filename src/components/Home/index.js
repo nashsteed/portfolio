@@ -6,7 +6,7 @@ import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const [showLoader, setShowLoader] = useState(true);
+  // const [showLoader, setShowLoader] = useState(true);
 
   const nameArray = ['N','a','s','h',' ','S','t','e','e','d']
   const jobArray = [
@@ -34,35 +34,31 @@ const Home = () => {
     'c',
   ]
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowLoader(false)
-    }, 0)
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowLoader(false)
+  //   }, 0)
   
-    // Return a cleanup function that clears the timeout
-    return () => clearTimeout(timer)
-  }, [])
+  //   // Return a cleanup function that clears the timeout
+  //   return () => clearTimeout(timer)
+  // }, [])
   
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 2000)
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLetterClass('text-animate-hover')
+  //   }, 2000)
   
-    // Return a cleanup function that clears the timeout
-    return () => clearTimeout(timer)
-  }, [])
+  //   // Return a cleanup function that clears the timeout
+  //   return () => clearTimeout(timer)
+  // }, [])
 
   return (
     <>
     
       <div className="home-page gradient-background">
         <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={23}
-            />
+          <h1 className="fadeInUp-animation">
+            Nash Steed
             <br />
             
           </h1>
@@ -72,6 +68,7 @@ const Home = () => {
               idx={12}
             /></h3>
           <h2></h2>
+          <div className='fadeInUp-animation'>
           <Link to="/portfolio" className="flat-button left">
             Portfolio
           </Link>
@@ -81,10 +78,10 @@ const Home = () => {
           <Link to="/about" className="flat-button center">
             About
           </Link>
+          </div>
         </div>
       </div>
 
-      {showLoader && <Loader type="line-scale-pulse-out" />}
     </>
   )
 }

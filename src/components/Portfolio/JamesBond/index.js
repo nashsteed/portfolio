@@ -2,16 +2,13 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
-import BB from '../../../assets/images/BB KING.png'
 
-import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.png'
-import BB2 from '../../../assets/images/BB KING 2.png'
-import sidemockdrno from '../../../assets/images/drno side mockup.png'
-import sidemockgolden from '../../../assets/images/goldeneye side mockup.png'
-import goldenmock from '../../../assets/images/goldeneyeMock.png'
-import drnomock from '../../../assets/images/drNoMock.png'
-import drnoposter from '../../../assets/images/Dr. No.png'
-import goldenposter from '../../../assets/images/goldeneye.png'
+import sidemockdrno from '../../../assets/images/drno side mockup.webp'
+import sidemockgolden from '../../../assets/images/goldeneye side mockup.webp'
+import goldenmock from '../../../assets/images/goldeneyeMock.webp'
+import drnomock from '../../../assets/images/drNoMock.webp'
+import drnoposter from '../../../assets/images/Dr. No.webp'
+import goldenposter from '../../../assets/images/goldeneye.webp'
 const JamesBond = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient
 

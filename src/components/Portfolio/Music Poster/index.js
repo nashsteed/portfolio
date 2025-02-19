@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
-import BB from '../../../assets/images/BB KING.png'
+import BB from '../../../assets/images/BB KING.webp'
 
-import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.png'
-import BB2 from '../../../assets/images/BB KING 2.png'
+import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.webp'
+import BB2 from '../../../assets/images/BB KING 2.webp'
 
 const MusicPoster = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient

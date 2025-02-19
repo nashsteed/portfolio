@@ -2,15 +2,12 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
-import BB from '../../../assets/images/bbking-mock.png'
-import trophy from '../../../assets/images/trophy.png'
-import spectre from '../../../assets/images/spectre.png'
-import postcards from '../../../assets/images/postcards-mock.png'
-import postcardMock from '../../../assets/images/postcards-mockup.png'
-import seoul from '../../../assets/images/seoul postcard.png'
-import cville from '../../../assets/images/cville postcard.png'
-import seattle from '../../../assets/images/seattle.png'
-import boston from '../../../assets/images/boston postcard.png'
+import postcards from '../../../assets/images/postcards-mock.webp'
+import postcardMock from '../../../assets/images/postcards-mockup.webp'
+import seoul from '../../../assets/images/seoul postcard.webp'
+import cville from '../../../assets/images/cville postcard.webp'
+import seattle from '../../../assets/images/seattle.webp'
+import boston from '../../../assets/images/boston postcard.webp'
 
 const Postcards = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient

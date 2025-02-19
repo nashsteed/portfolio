@@ -1,3 +1,19 @@
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+
 .home-page {
 
 
@@ -52,7 +68,7 @@
     font-size: 11px;
     font-family: sans-serif;
     letter-spacing: 3px;
-    animation: fadeIn 1s 1.8s backwards;
+    animation: fadeInUp 1.5s;
   }
 
   h3 {
@@ -78,7 +94,7 @@
     border-radius: 5px;
     margin-top: 25px;
     float: right; /* Default float to the right for the second button */
-    animation: fadeInAnimation 1s 1.8s backwards;
+    // animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
     margin-right: 100px;
 

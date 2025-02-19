@@ -52,8 +52,8 @@
   max-width: 100%;
   overflow-y: auto;
   overflow-x: hidden; /* Enable vertical scrolling */
-  opacity: 0;
-  animation: fadeInGrid 1.5s forwards;
+  opacity: 1;
+  animation: fadeInGrid 2.5s forwards;
   scroll-behavior: smooth; /* Fade-in effect for grid */
 }
 

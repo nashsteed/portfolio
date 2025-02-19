@@ -2,21 +2,12 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
-import BB from '../../../assets/images/BB KING.png'
 
-import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.png'
-import BB2 from '../../../assets/images/BB KING 2.png'
-import sidemockdrno from '../../../assets/images/drno side mockup.png'
-import sidemockgolden from '../../../assets/images/goldeneye side mockup.png'
-import goldenmock from '../../../assets/images/goldeneyeMock.png'
-import drnomock from '../../../assets/images/drNoMock.png'
-import drnoposter from '../../../assets/images/Dr. No.png'
-import goldenposter from '../../../assets/images/goldeneye.png'
-import seek from '../../../assets/images/MGCS/MGCS T Shirts.png'
-import pic1 from '../../../assets/images/MGCS/tshirts.jpg'
+import seek from '../../../assets/images/MGCS/MGCS T Shirts.webp'
+import pic1 from '../../../assets/images/MGCS/MGCS T Shirts.webp'
 import pic2 from '../../../assets/images/MGCS/tshirts2.jpg'
-import alt1 from '../../../assets/images/MGCS/5.png'
-import alt2 from '../../../assets/images/MGCS/4.png'
+import alt1 from '../../../assets/images/MGCS/5.webp'
+import alt2 from '../../../assets/images/MGCS/4.webp'
 import Back from '../../../assets/images/2025-02-14 13.06.46.jpg'
 
 const MGCSShirts = () => {

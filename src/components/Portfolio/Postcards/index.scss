@@ -1,3 +1,28 @@
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+
+
+.fadeInRight-animation {
+  animation: 1.5s fadeInLeft;
+}
+
+.music-art {
+  animation: fadeIn 1.5s ease-out forwards !important; /* New animation for the grid */
+}
+
 .portfolio-item-grid {
   align-items: center;
   max-height: 100vh;
@@ -10,9 +35,10 @@
   box-sizing: border-box;
   overflow-y: auto; /* Enable vertical scrolling */
   opacity: 0;
-  animation: fadeInGrid 1.5s forwards;
+  animation: fadeInUp 2s forwards;
   scroll-behavior: smooth; /* Fade-in effect for grid */
   margin: 0 auto;
+  padding-top: 175px;
 
     h1 {
         color: #000;
@@ -38,9 +64,9 @@
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
-  animation: fadeInItem 1s forwards; 
+  // animation: fadeInItem 1s forwards; 
   overflow-x: hidden;  /* Hide any horizontal overflow */
   position: relative;/* Fade-in effect for items */
 }

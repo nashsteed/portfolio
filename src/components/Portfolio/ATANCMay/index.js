@@ -2,23 +2,14 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
-import BB from '../../../assets/images/BB KING.png'
 
-import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.png'
-import BB2 from '../../../assets/images/BB KING 2.png'
-import sidemockdrno from '../../../assets/images/drno side mockup.png'
-import sidemockgolden from '../../../assets/images/goldeneye side mockup.png'
-import goldenmock from '../../../assets/images/goldeneyeMock.png'
-import drnomock from '../../../assets/images/drNoMock.png'
-import drnoposter from '../../../assets/images/Dr. No.png'
-import goldenposter from '../../../assets/images/goldeneye.png'
 
-import redBlank from '../../../assets/images/ATANC MAY/redBlank.png'
-import blueBlank from '../../../assets/images/ATANC MAY/blueBlank.png'
-import red1 from '../../../assets/images/ATANC MAY/red1.png'
-import red2 from '../../../assets/images/ATANC MAY/red2.png'
-import blue1 from '../../../assets/images/ATANC MAY/blue1.png'
-import blue2 from '../../../assets/images/ATANC MAY/blue2.png'
+import redBlank from '../../../assets/images/ATANC MAY/redBlank.webp'
+import blueBlank from '../../../assets/images/ATANC MAY/blueBlank.webp'
+import red1 from '../../../assets/images/ATANC MAY/red1.webp'
+import red2 from '../../../assets/images/ATANC MAY/red2.webp'
+import blue1 from '../../../assets/images/ATANC MAY/blue1.webp'
+import blue2 from '../../../assets/images/ATANC MAY/blue2.webp'
 
 const ATANCMay = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient

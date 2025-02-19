@@ -2,10 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
-import BB from '../../../assets/images/BB KING.png';
-import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.png';
-import BB2 from '../../../assets/images/BB KING 2.png';
-import castYourSails from '../../../assets/images/cast-your-sails-v2.png';
+
+import castYourSails from '../../../assets/images/cast-your-sails-v2.webp';
 import kidsCastle from '../../../assets/images/kidscastle.jpg';
 import colorTheStars from '../../../assets/images/colorthestars.jpg';
 import rainfall from '../../../assets/images/rainfall.jpg';
@@ -15,7 +13,7 @@ const Music = () => {
 
   return (
     <div className={`portfolio ${backgroundClass}`}>
-      <div className="portfolio-item-grid">
+      <div className="portfolio-item-grid music-art">
       <div className="portfolio-detail-item portfolio-item-large2">
         <h1></h1>
           <h1> Cast Your Sails</h1>

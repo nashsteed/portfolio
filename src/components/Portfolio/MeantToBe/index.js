@@ -2,27 +2,13 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
-import BB from '../../../assets/images/BB KING.png'
 
-import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.png'
-import BB2 from '../../../assets/images/BB KING 2.png'
-import sidemockdrno from '../../../assets/images/drno side mockup.png'
-import sidemockgolden from '../../../assets/images/goldeneye side mockup.png'
-import goldenmock from '../../../assets/images/goldeneyeMock.png'
-import drnomock from '../../../assets/images/drNoMock.png'
-import drnoposter from '../../../assets/images/Dr. No.png'
-import goldenposter from '../../../assets/images/goldeneye.png'
-import seek from '../../../assets/images/MGCS/MGCS T Shirts.png'
-import pic1 from '../../../assets/images/MGCS/tshirts.jpg'
-import pic2 from '../../../assets/images/MGCS/tshirts2.jpg'
-import alt1 from '../../../assets/images/MGCS/5.png'
-import alt2 from '../../../assets/images/MGCS/4.png'
-import Strawberry from '../../../assets/images/MeantToBee Strawberry.png'
-import Blueberry from '../../../assets/images/MeanToBee Blueberry.png'
-import Cinnamon from '../../../assets/images/MeantToBee Cinnamon.png'
-import StrawberryAd from '../../../assets/images/MeantToBee Ad Strawberry.png'
-import BlueberryAd from '../../../assets/images/MeantToBee Ad Blueberry.png'
-import CinnamonAd from '../../../assets/images/MeantToBee Ad Cinnamon.png'
+import Strawberry from '../../../assets/images/MeantToBee Strawberry.webp'
+import Blueberry from '../../../assets/images/MeanToBee Blueberry.webp'
+import Cinnamon from '../../../assets/images/MeantToBee Cinnamon.webp'
+import StrawberryAd from '../../../assets/images/MeantToBee Ad Strawberry.webp'
+import BlueberryAd from '../../../assets/images/MeantToBee Ad Blueberry.webp'
+import CinnamonAd from '../../../assets/images/MeantToBee Ad Cinnamon.webp'
 
 const MeantToBee = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient

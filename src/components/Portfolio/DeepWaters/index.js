@@ -3,32 +3,23 @@ import '../../../components/Portfolio/Postcards/index.scss'
 import '../../../components/Portfolio/index.scss'
 import '../../../components/Portfolio/DeepWaters/index.scss'
 import deepWatersMock from '../../../assets/images/DeepWatersMock.png';
-import BB from '../../../assets/images/BB KING.png';
-import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.png';
-import BB2 from '../../../assets/images/BB KING 2.png';
-import sidemockdrno from '../../../assets/images/drno side mockup.png';
-import sidemockgolden from '../../../assets/images/goldeneye side mockup.png';
-import goldenmock from '../../../assets/images/goldeneyeMock.png';
-import drnomock from '../../../assets/images/drNoMock.png';
-import drnoposter from '../../../assets/images/Dr. No.png';
-import goldenposter from '../../../assets/images/goldeneye.png';
-import rightArrow from '../../../assets/images/rightarrow.webp';
-import slide1 from '../../../assets/images/DeepWatersSlides/slide1.png';
-import slide2 from '../../../assets/images/DeepWatersSlides/slide2.png';
-import slide3 from '../../../assets/images/DeepWatersSlides/slide3.png';
-import slide4 from '../../../assets/images/DeepWatersSlides/slide4.png';
-import slide5 from '../../../assets/images/DeepWatersSlides/slide5.png';
-import slide6 from '../../../assets/images/DeepWatersSlides/slide6.png';
-import slide7 from '../../../assets/images/DeepWatersSlides/slide7.png';
-import slide8 from '../../../assets/images/DeepWatersSlides/slide8.png';
-import slide9 from '../../../assets/images/DeepWatersSlides/slide9.png';
-import slide10 from '../../../assets/images/DeepWatersSlides/slide10.png';
-import slide11 from '../../../assets/images/DeepWatersSlides/slide11.png';
-import slide12 from '../../../assets/images/DeepWatersSlides/slide12.png';
-import slide13 from '../../../assets/images/DeepWatersSlides/slide13.png';
-import slide14 from '../../../assets/images/DeepWatersSlides/slide14.png';
-import slide15 from '../../../assets/images/DeepWatersSlides/slide15.png';
-import phoneMock from '../../../assets/images/DeepWatersSlides/phoneMock.png';
+
+import slide1 from '../../../assets/images/DeepWatersSlides/slide1.webp';
+import slide2 from '../../../assets/images/DeepWatersSlides/slide2.webp';
+import slide3 from '../../../assets/images/DeepWatersSlides/slide3.webp';
+import slide4 from '../../../assets/images/DeepWatersSlides/slide4.webp';
+import slide5 from '../../../assets/images/DeepWatersSlides/slide5.webp';
+import slide6 from '../../../assets/images/DeepWatersSlides/slide6.webp';
+import slide7 from '../../../assets/images/DeepWatersSlides/slide7.webp';
+import slide8 from '../../../assets/images/DeepWatersSlides/slide8.webp';
+import slide9 from '../../../assets/images/DeepWatersSlides/slide9.webp';
+import slide10 from '../../../assets/images/DeepWatersSlides/slide10.webp';
+import slide11 from '../../../assets/images/DeepWatersSlides/slide11.webp';
+import slide12 from '../../../assets/images/DeepWatersSlides/slide12.webp';
+import slide13 from '../../../assets/images/DeepWatersSlides/slide13.webp';
+import slide14 from '../../../assets/images/DeepWatersSlides/slide14.webp';
+import slide15 from '../../../assets/images/DeepWatersSlides/slide15.webp';
+import phoneMock from '../../../assets/images/DeepWatersSlides/phoneMock.webp';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
