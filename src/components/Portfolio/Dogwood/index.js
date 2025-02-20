@@ -17,6 +17,8 @@ import Back from '../../../assets/images/2025-02-14 13.06.46.jpg'
 import flower from '../../../assets/images/flower1.png'
 import logo1 from '../../../assets/images/logo1.png'
 import side1 from '../../../assets/images/side1.png'
+import logoGif from '../../../assets/images/logotest.gif'
+
 
 
 
