@@ -15,11 +15,9 @@ import phoneMock from '../../assets/images/DeepWatersSlides/phoneMock.webp';
 import red1 from '../../assets/images/ATANC MAY/red1.webp';
 import blueBlank from '../../assets/images/ATANC MAY/blueBlank.webp';
 import Lottie from 'react-lottie'
-import animationData from '../../assets/images/logotest.json'; 
 
-import businessCards from '../../assets/images/dogwood-business-cards.png'; 
+import businessCards from '../../assets/images/dogwood-business-cards.webp'; 
 
-import coolflower from '../../assets/images/coolflower.png'
 
 
 const Portfolio = () => {
@@ -27,14 +25,7 @@ const Portfolio = () => {
   const imagesRef = useRef([]);
   const [loadedImages, setLoadedImages] = useState([]);
 
-  const lottieOptions = {
-    loop: true,
-    autoplay: true, 
-    animationData: animationData, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  };
+
 
   useEffect(() => {
     // Trigger background change after a slight delay

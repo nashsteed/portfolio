@@ -25,8 +25,8 @@ import colorGuide from '../../../assets/images/color-guide.png'
 
 import coolFlower from '../../../assets/images/coolflower.png'
 
-import businessCards from '../../../assets/images/dogwood-business-cards.png'
-import businessCards2 from '../../../assets/images/dogwood-business-cards1.png'
+import businessCards from '../../../assets/images/dogwood-business-cards.webp'
+import businessCards2 from '../../../assets/images/dogwood-business-cards1.webp'
 
 
 
