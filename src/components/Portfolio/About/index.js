@@ -9,9 +9,9 @@ const About = () => {
 
   return (
     <div className={`portfolio ${backgroundClass}`}>
-  <div className="portfolio-item-grid music-art">
+  <div className="portfolio-item-grid">
 
-  <div className="portfolio-detail-item portfolio-item-large fadeInRight-animation">
+  <div className="portfolio-detail-item portfolio-item-large fadeInUp-animation">
       <img src={gradPhoto} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
 
