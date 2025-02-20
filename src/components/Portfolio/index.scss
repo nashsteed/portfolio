@@ -52,8 +52,9 @@
   max-width: 100%;
   overflow-y: auto;
   overflow-x: hidden; /* Enable vertical scrolling */
-  opacity: 1;
-  animation: fadeInGrid 2.5s forwards;
+  opacity: 0;
+  animation: fadeInGrid 1.5s forwards;
+  animation-delay: 0.75s;
   scroll-behavior: smooth; /* Fade-in effect for grid */
 }
 
@@ -67,12 +68,13 @@
   }
 }
 
+
 /* Portfolio Item Styles */
 .portfolio-item {
   position: relative;
   overflow: hidden;
   //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.6s ease-in-out;
   opacity: 0;
   cursor: grab;
   animation: fadeInItem 1s forwards; 
@@ -83,6 +85,8 @@
   height: 100%;
 }
 
+
+
 @keyframes fadeInItem {
   0% {
     opacity: 0;
@@ -90,6 +94,11 @@
   100% {
     opacity: 1;
   }
+}
+
+.portfolio-item.loaded {
+  opacity: 1 !important;
+  animation: 1 ease-in; /* Make the image visible once it's in view */
 }
 
 /* Portfolio Item Sizes */

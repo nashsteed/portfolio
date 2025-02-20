@@ -21,7 +21,7 @@ const Music = () => {
           <h2>Released: 2023</h2>
         </div>
         <div className="portfolio-detail-item portfolio-item-large">
-          <img src={castYourSails}></img>
+          <img rel="preload" loading="lazy" src={castYourSails}></img>
         </div>
         
 
@@ -34,7 +34,6 @@ const Music = () => {
           height="352"
           frameBorder="0"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
         ></iframe>
       </div>
 
@@ -45,7 +44,7 @@ const Music = () => {
           <h2>Released: 2023</h2>
         </div>
         <div className="portfolio-detail-item portfolio-item-large">
-          <img src={rainfall}></img>
+          <img loading="lazy" src={rainfall}></img>
         </div>
         
 
@@ -70,7 +69,7 @@ const Music = () => {
           <h2>Released: 2022</h2>
         </div>
         <div className="portfolio-detail-item portfolio-item-large">
-          <img src={kidsCastle}></img>
+          <img loading="lazy" src={kidsCastle}></img>
         </div>
         
 
@@ -96,7 +95,7 @@ const Music = () => {
           <h2>Released: 2022</h2>
         </div>
         <div className="portfolio-detail-item portfolio-item-large">
-          <img src={colorTheStars}></img>
+          <img loading="lazy" src={colorTheStars}></img>
         </div>
         
 

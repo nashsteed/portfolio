@@ -13,6 +13,19 @@
   animation: 1.5s fadeInUp;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn-animation {
+  animation: 1.5s fadeIn;
+}
+
 
 
 .fadeInRight-animation {
@@ -64,11 +77,13 @@
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  opacity: 1;
+  opacity: 0;
   cursor: pointer;
   // animation: fadeInItem 1s forwards; 
   overflow-x: hidden;  /* Hide any horizontal overflow */
   position: relative;/* Fade-in effect for items */
+  animation: 1.5s fadeIn forwards;
+  animation-delay: 0.5s;
 }
 
 .portfolio-detail-item {

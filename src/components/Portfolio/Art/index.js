@@ -10,7 +10,7 @@ const Art = () => {
 
   return (
     <div className={`portfolio ${backgroundClass}`}>
-  <div className="portfolio-item-grid">
+  <div className="portfolio-item-grid music-art">
 
   <div className="portfolio-detail-item portfolio-item-large2">
       <img src={art1} alt="Portfolio 1" className="portfolio-detail-item" />
