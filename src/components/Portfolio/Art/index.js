@@ -4,7 +4,7 @@ import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
 
 import AIKIM from '../../../assets/images/aikim.jpg'
-import art1 from '../../../assets/images/IMG_0130.jpg'
+import art1 from '../../../assets/images/IMG_0130.webp'
 const Art = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient
 
@@ -13,7 +13,7 @@ const Art = () => {
   <div className="portfolio-item-grid music-art">
 
   <div className="portfolio-detail-item portfolio-item-large2">
-      <img src={art1} alt="Portfolio 1" className="portfolio-detail-item" />
+      <img rel="preload" src={art1} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
   
   <div className="portfolio-detail-item portfolio-item-large2">

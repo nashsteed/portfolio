@@ -1,3 +1,14 @@
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 .home-page {
 
     &.gradient-background {
@@ -98,13 +109,14 @@
     font-family: 'Greycliff';
     text-decoration: none;
     padding: 10px 10px;
+    opacity: 0;
    // border: 2px solid #d6b588;
     border: 2px solid #d6b588;
     border-radius: 5px;
     margin-top: 25px;
     margin-left: 10%;
     margin-right: 10%;
-    animation: fadeInAnimation 1s 1.8s backwards;
+    animation: fadeInUp 1s forwards;
     white-space: nowrap;
 
 }
