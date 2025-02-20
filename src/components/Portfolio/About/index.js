@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
 
-import gradPhoto from '../../../assets/images/gradphoto.jpg'
+import gradPhoto from '../../../assets/images/gradphoto.webp'
+
+
 const About = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient
 
