@@ -8,6 +8,7 @@ import postcards from '../../assets/images/postcards-mock.webp';
 import goldeneye from '../../assets/images/goldeneyeMock.webp';
 import shirtDesigns from '../../assets/images/MGCS/banner.webp';
 import MeantToBeeStrawberryAd from '../../assets/images/MeantToBee Ad Strawberry.webp';
+import MeantToBeeCinnamonAd from '../../assets/images/MeantToBee Ad Cinnamon.webp';
 import MeantToBeeStrawberry from '../../assets/images/MeantToBee Strawberry.png';
 import deepWatersMock from '../../assets/images/DeepWatersMock.webp';
 import phoneMock from '../../assets/images/DeepWatersSlides/phoneMock.webp';
@@ -16,7 +17,9 @@ import blueBlank from '../../assets/images/ATANC MAY/blueBlank.webp';
 import Lottie from 'react-lottie'
 import animationData from '../../assets/images/logotest.json'; 
 
-import logo1 from '../../assets/images/logo1.png'
+import businessCards from '../../assets/images/dogwood-business-cards.png'; 
+
+import coolflower from '../../assets/images/coolflower.png'
 
 
 const Portfolio = () => {
@@ -89,7 +92,7 @@ const Portfolio = () => {
         <Link to="/portfolio/dogwood" className="portfolio-item portfolio-item-large">
           <img 
             ref={setImageRef} 
-            src={logo1} 
+            src={businessCards} 
             alt="Portfolio 1" 
             loading="lazy"
             onLoad={() => handleImageLoad(0)} 
@@ -143,7 +146,7 @@ const Portfolio = () => {
         <Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large">
           <img 
             ref={setImageRef} 
-            src={MeantToBeeStrawberryAd} 
+            src={MeantToBeeCinnamonAd} 
             alt="Portfolio 1" 
             loading="lazy"
             onLoad={() => handleImageLoad(1)} 

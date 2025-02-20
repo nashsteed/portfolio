@@ -18,8 +18,15 @@ import flower from '../../../assets/images/flower1.png'
 import logo1 from '../../../assets/images/logo1.png'
 import side1 from '../../../assets/images/side1.png'
 import logoGif from '../../../assets/images/logotest.gif'
+import process from '../../../assets/images/process-dogwood.png'
+import old from '../../../assets/images/old-dogwood.png'
 
+import colorGuide from '../../../assets/images/color-guide.png'
 
+import coolFlower from '../../../assets/images/coolflower.png'
+
+import businessCards from '../../../assets/images/dogwood-business-cards.png'
+import businessCards2 from '../../../assets/images/dogwood-business-cards1.png'
 
 
 
@@ -38,8 +45,12 @@ const Dogwood = () => {
     <div className={`portfolio ${backgroundClass}`}>
   <div className="portfolio-item-grid">
 
-  <div className="portfolio-detail-item portfolio-item-large">
-      <img src={logo1} alt="Portfolio 1" className="portfolio-detail-item" />
+  <div className="portfolio-detail-item portfolio-item-large2">
+      <img src={businessCards} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
+    <div className="portfolio-detail-item portfolio-item-large">
+      <img src={colorGuide} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
 
   <div className="portfolio-detail-item portfolio-item-large" align-self="center" >
@@ -48,7 +59,31 @@ const Dogwood = () => {
       <h2>A land development company based in Wilmington, NC contacted me about redesigning their logo. They wanted to maintain the iconic dogflower aesthetic but wanted it to look modern and cleaner. I had a blast designing this for them and getting to see it put in action!</h2>
     </div>
 
+    <div className="portfolio-detail-item portfolio-item-large">
+      <img src={logo1} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
+    <div className="portfolio-detail-item portfolio-item-large">
+      <img src={side1} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
+    <div className="portfolio-detail-item portfolio-item-large">
+      <img src={process} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
+    <div className="portfolio-detail-item portfolio-item-large">
+      <img src={old} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
     <div className="portfolio-detail-item portfolio-item-large2">
+      <img src={businessCards2} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
+    
+
+
+
+    {/* <div className="portfolio-detail-item portfolio-item-large2">
     <div className='lottie-container'>
           <Lottie 
             options={lottieOptions}
@@ -58,18 +93,10 @@ const Dogwood = () => {
             loading="lazy"
           />
           </div>
-    </div>
-    <div className="portfolio-detail-item portfolio-item-large2">
-      <img src={side1} alt="Portfolio 1" className="portfolio-detail-item" />
-    </div>
+    </div> */}
 
-    <div className="portfolio-detail-item portfolio-item-large">
-      <img src={flower} alt="Portfolio 1" className="portfolio-detail-item" />
-    </div>
 
-    <div className="portfolio-detail-item portfolio-item-large">
-      <img src={flower} alt="Portfolio 1" className="portfolio-detail-item" />
-    </div>
+
 
     
     
