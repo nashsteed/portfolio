@@ -16,6 +16,7 @@
     "react-dom": "^19.0.0",
     "react-leaflet": "^5.0.0",
     "react-loaders": "^3.0.1",
+    "react-lottie": "^1.2.10",
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
     "sass": "^1.83.4",

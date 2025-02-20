@@ -8,15 +8,30 @@ import postcards from '../../assets/images/postcards-mock.webp';
 import goldeneye from '../../assets/images/goldeneyeMock.webp';
 import shirtDesigns from '../../assets/images/MGCS/banner.webp';
 import MeantToBeeStrawberryAd from '../../assets/images/MeantToBee Ad Strawberry.webp';
+import MeantToBeeStrawberry from '../../assets/images/MeantToBee Strawberry.png';
 import deepWatersMock from '../../assets/images/DeepWatersMock.webp';
 import phoneMock from '../../assets/images/DeepWatersSlides/phoneMock.webp';
 import red1 from '../../assets/images/ATANC MAY/red1.webp';
 import blueBlank from '../../assets/images/ATANC MAY/blueBlank.webp';
+import Lottie from 'react-lottie'
+import animationData from '../../assets/images/logotest.json'; 
+
+import logo1 from '../../assets/images/logo1.png'
+
 
 const Portfolio = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background');
   const imagesRef = useRef([]);
   const [loadedImages, setLoadedImages] = useState([]);
+
+  const lottieOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: animationData, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
 
   useEffect(() => {
     // Trigger background change after a slight delay
@@ -71,17 +86,31 @@ const Portfolio = () => {
           />
         </Link>
 
-        <Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large">
+        <Link to="/portfolio/dogwood" className="portfolio-item portfolio-item-large">
           <img 
             ref={setImageRef} 
-            src={MeantToBeeStrawberryAd} 
+            src={logo1} 
             alt="Portfolio 1" 
             loading="lazy"
-            onLoad={() => handleImageLoad(1)} 
+            onLoad={() => handleImageLoad(0)} 
           />
         </Link>
 
-        <Link to="/portfolio/deep-waters" className="portfolio-item portfolio-item-large">
+
+
+        {/* <Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large">
+        <div className='lottie-container'>
+          <Lottie 
+            options={lottieOptions}
+            alt="Portfolio 1"
+            height={400}
+            loading="lazy"
+            onLoad={() => handleImageLoad(1)} 
+          />
+          </div>
+        </Link> */}
+
+<Link to="/portfolio/deep-waters" className="portfolio-item portfolio-item-large">
           <img 
             ref={setImageRef} 
             src={deepWatersMock} 
@@ -100,6 +129,30 @@ const Portfolio = () => {
             onLoad={() => handleImageLoad(3)} 
           />
         </Link>
+
+<Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large">
+          <img 
+            ref={setImageRef} 
+            src={MeantToBeeStrawberry} 
+            alt="Portfolio 1" 
+            loading="lazy"
+            onLoad={() => handleImageLoad(1)} 
+          />
+        </Link>
+
+        <Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large">
+          <img 
+            ref={setImageRef} 
+            src={MeantToBeeStrawberryAd} 
+            alt="Portfolio 1" 
+            loading="lazy"
+            onLoad={() => handleImageLoad(1)} 
+          />
+        </Link>
+
+        
+
+        
 
         <Link to="/portfolio/atanc-national-tennis-month" className="portfolio-item portfolio-item-large">
           <img 

@@ -15,6 +15,7 @@ import ATANCMay from './components/Portfolio/ATANCMay'
 import About from './components/Portfolio/About'
 import Music from './components/Portfolio/Music'
 import Art from './components/Portfolio/Art'
+import Dogwood from './components/Portfolio/Dogwood'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="portfolio/meant-to-bee" element={<MeantToBee />} />
           <Route path="portfolio/deep-waters" element={<DeepWaters />} />
           <Route path="portfolio/atanc-national-tennis-month" element={<ATANCMay />} />
+          <Route path="portfolio/dogwood" element={<Dogwood />} />
           <Route path="about" element={<About />} />
           <Route path="music" element={<Music />} />
           <Route path="art" element={<Art />} />
