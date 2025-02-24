@@ -16,11 +16,14 @@ import About from './components/Portfolio/About'
 import Music from './components/Portfolio/Music'
 import Art from './components/Portfolio/Art'
 import Dogwood from './components/Portfolio/Dogwood'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
   return (
     <>
+    <ScrollToTop/>
       <Routes>
+        
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path ="contact" index element={<Contact />} />

@@ -1,0 +1,37 @@
+.menubar-nav {
+    align-items: center;
+    background-color: #e6e6dd;
+    position: fixed;
+    width: 100%;
+    z-index: 10001;
+    display: flex;
+    padding: 1rem 0;
+    height: 5.5rem;
+}
+
+.menubar-div-side {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+}
+
+.menubar-div-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 1.5;
+}
+
+.menubar-icon {
+    font-size: 22px;
+}
+
+.menubar-icon-link {
+    color: #d6b588;
+}
+
+.menubar-icon-link:hover {
+    color: #88A9D6;
+}

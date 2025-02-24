@@ -14,8 +14,7 @@
     &.gradient-background {
       background-size: 120% 120%;
       animation: gradient-animation 2s ease infinite;
-      transition: 1s ease-in;
-      height: 100vh; /* Ensure it covers the full height of the viewport */
+      transition: 1s ease-in; /* Ensure it covers the full height of the viewport */
       width: 100%;
       position: relative;
     }
@@ -183,7 +182,7 @@
     }
 
     h1 {
-      font-size: 50px;
+      font-size: 4rem;
     }
 
     h3 {

@@ -16,18 +16,9 @@
 
 .home-page {
 
-
+  padding-top: 75rem;
   justify-content: center;
 
-  &.gradient-background {
-    background: #e6e6dd;
-    //background: linear-gradient(180deg, #88A9D6 70%, #fff);
-    background-size: 120% 120%;
-    animation: gradient-animation 2s ease infinite;
-    height: 100vh; /* Ensure it covers the full height of the viewport */
-    width: 100%;
-    position: relative;
-  }
   
   
   .text-zone {

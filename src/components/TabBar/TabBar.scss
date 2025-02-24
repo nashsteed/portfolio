@@ -1,0 +1,15 @@
+.tabbar-nav {
+    position: fixed;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 8rem;
+    padding-top: 8.5rem;
+    width: 100%;
+    background-color: #e6e6dd;
+    background: linear-gradient(to bottom, #e6e6dd 60%, rgba(230, 230, 221, 0) 100%);
+    z-index: 1000;
+
+    
+}
