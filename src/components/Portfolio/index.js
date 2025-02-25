@@ -144,6 +144,16 @@ const Portfolio = () => {
           />
         </Link>
 
+        <Link to="/portfolio/mgcs-shirts" className="portfolio-item portfolio-item-large2">
+          <img 
+            ref={setImageRef} 
+            src={shirtDesigns} 
+            alt="Portfolio 1" 
+            loading="lazy"
+            onLoad={() => handleImageLoad(7)} 
+          />
+        </Link>
+
         
 
         
@@ -178,15 +188,7 @@ const Portfolio = () => {
           />
         </Link>
 
-        <Link to="/portfolio/mgcs-shirts" className="portfolio-item portfolio-item-large2">
-          <img 
-            ref={setImageRef} 
-            src={shirtDesigns} 
-            alt="Portfolio 1" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(7)} 
-          />
-        </Link>
+        
 
         <Link to="/portfolio/bb-king-poster" className="portfolio-item portfolio-item-large2">
           <img 
