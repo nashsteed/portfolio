@@ -1,5 +1,4 @@
 .text-animate {
-  display: inline-block;
   opacity: 0;
   animation: fadeIn;
   animation-duration: 0.5s;
@@ -8,14 +7,12 @@
 }
 
 .text-non-animate {
-  display: inline-block;
   opacity: 1;
   min-width: 10px;
 }
 
 .text-animate-hover {
   min-width: 10px;
-  display: inline-block;
   animation-fill-mode: both;
 
   // &:hover {

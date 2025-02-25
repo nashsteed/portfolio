@@ -26,21 +26,22 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%,-50%);
-      width: 40%;
+      width: 100%;
       max-height: 90%;
+      display: flex;
+      flex-direction: column;
       text-align: center;
-      display: block;
       justify-content: space-between; /* Distribute buttons evenly */
       align-items: center; /* Vertically align buttons to the center */
     }
   
     h1 {
       color: #88A9D6;
-      font-size: 75px;
-      line-height: 53px;
+      font-size: 20rem;
       margin: 0;
       font-family: 'Greycliff';
       font-weight: 400;
+      padding-bottom: 1rem;
   
   
       img {
@@ -64,39 +65,34 @@
   
     h3 {
       color: #88A9D6;
-      font-size: 28px;
+      font-size: 5rem;
       line-height: 53px;
-      margin: 0;
       font-family: 'Greycliff';
       font-weight: 400;
   
     }
   
     .flat-button {
+      position: relative;
       color: #d6b588;
-      font-size: 13px;
+      font-size: 4rem;
       font-weight: 400;
       letter-spacing: 4px;
       font-family: 'Greycliff';
       text-decoration: none;
-      padding: 10px 30px;
+      padding: 20px 30px;
       border: 2px solid #d6b588;
-      margin-top: 25px;
-      float: right; /* Default float to the right for the second button */
-      // animation: fadeInAnimation 1s 1.8s backwards;
       white-space: nowrap;
-      margin-right: 100px;
+      display: block;
   
       &:hover {
         background: #88A9D6;
         border: 2px solid #fff;
         color: #fff;
+        z-index: 1000;
       }
   
       &.left {
-        float: left;
-        margin-left: 100px; 
-        margin-right: 0px;/* Apply left float for the left-aligned button */
       }
   }
 
@@ -186,7 +182,7 @@
     }
 
     h3 {
-      font-size: 18px;
+      font-size: 2rem;
     }
 
     .flat-button {
@@ -215,7 +211,7 @@
     }
 
     .flat-square{
-      font-size: 14px;
+      font-size: 1.35rem;
     }
   }
   }

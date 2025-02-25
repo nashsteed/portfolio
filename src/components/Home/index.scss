@@ -9,14 +9,44 @@
   }
 }
 
+@keyframes fadeInBG {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .fadeInUp-animation {
   animation: 1.5s fadeInUp;
 }
 
+.home-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  /* Background Grid */
+  .background-image {
+    padding-left: 1.5rem;
+    padding-top: 10rem;
+    position: image;
+    width: 100%;
+    height: 80vh;
+    opacity:0;
+    animation: fadeInUp 1.5s forwards;
+    overflow: hidden;
+    transition: transform 0.1s ease-out;
+    
+  }
+}
+
+
 
 .home-page {
-
-  padding-top: 75rem;
   justify-content: center;
 
   
@@ -29,18 +59,20 @@
     width: 40%;
     max-height: 90%;
     text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between; /* Distribute buttons evenly */
     align-items: center; /* Vertically align buttons to the center */
   }
 
   h1 {
     color: #88A9D6;
-    font-size: 75px;
-    line-height: 53px;
+    font-size: 25rem;
+    line-height: 15rem;
     margin: 0;
     font-family: 'Greycliff';
     font-weight: 400;
+    animation: fadeIn 2s;
 
 
     img {
@@ -53,6 +85,7 @@
   }
 
   h2 {
+    color: black;
     color: #8d8d8d;
     margin-top: 20px;
     font-weight: 400;
@@ -72,22 +105,24 @@
 
   }
 
+  .buttons {
+    padding-top: 10rem;
+    opacity:0;
+    animation: fadeInUp 1.5s forwards;
+  }
 
   .flat-button {
     color: #e6e6dd;
-    font-size: 13px;
+    font-size: 23px;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: 'Greycliff';
     text-decoration: none;
+    margin: -2rem auto;
     padding: 10px 30px;
     border: 2px solid #d6b588;
     border-radius: 5px;
-    margin-top: 25px;
-    float: right; /* Default float to the right for the second button */
-    // animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
-    margin-right: 100px;
 
    
 
@@ -95,12 +130,11 @@
       background: #fff;
       border: 2px solid #fff;
       color: #d6b588;
+      z-index: 1000;
+      opacity: 1;
     }
 
     &.left {
-      float: left;
-      margin-left: 100px; 
-      margin-right: 0px;/* Apply left float for the left-aligned button */
     }
 }
 
@@ -160,22 +194,25 @@
   }
 }
 .center{
-  margin-top: 100px !important;
-  margin-right: 0px !important;
-  left: 50% !important;
-  position: absolute !important;
-  transform: translateX(-50%);
   background: #D05353;
   border: #D05353 !important;
+  z-index: 102;
+  opacity: 1;
 }
 
 .left{
+margin-right: 6rem;
 background: #537A5A;
 border:  #537A5A !important;
+z-index: 100;
+opacity: 1;
 }
 
 .right{
   background: #424874;
+  margin-right: 4rem;
   border: #424874 !important;
+  z-index: 101;
+  opacity: 1;
 }
 }

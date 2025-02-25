@@ -28,7 +28,8 @@
   opacity: 0;
   animation: fadeInGrid 1.5s forwards;
   animation-delay: 0.75s;
-  scroll-behavior: smooth; /* Fade-in effect for grid */
+  scroll-behavior: smooth;
+  padding-bottom: 10rem; /* Fade-in effect for grid */
 }
 
 /* Fade-in animation */

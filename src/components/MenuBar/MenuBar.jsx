@@ -23,7 +23,7 @@ export const MenuBar = () => {
             </Link>
             </div>
             <div className="menubar-div-side">
-            {location.pathname !== "/" && (
+            {location.pathname !== "/" && location.pathname !== "/contact" && (
                 <Link className="button button-lightblue-hover" to="/contact" >Contact</Link>
             )}
             </div>
