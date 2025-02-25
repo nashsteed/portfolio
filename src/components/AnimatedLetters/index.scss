@@ -11,6 +11,10 @@
   min-width: 10px;
 }
 
+.text-hidden {
+  opacity: 0;
+}
+
 .text-animate-hover {
   min-width: 10px;
   animation-fill-mode: both;
