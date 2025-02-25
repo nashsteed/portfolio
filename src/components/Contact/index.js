@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './index.scss'
-import testBG from '../../assets/images/testBG.png'
+import testBG from '../../assets/images/testBG.webp'
 
 const Contact = () => {
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 })

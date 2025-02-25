@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
-import testBG from '../../assets/images/testBG.png'
+import testBG from '../../assets/images/testBG.webp'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
