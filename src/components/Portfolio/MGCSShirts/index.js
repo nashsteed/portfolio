@@ -19,10 +19,10 @@ const MGCSShirts = () => {
 
   <div className="portfolio-detail-item portfolio-item-large2" align-self="center" >
       <h1>"Seek Him First" 2023 Shirts</h1>
-      <h2>Client: Myrtle Grove Christian School</h2>
+      <h2 className="client">Client: Myrtle Grove Christian School</h2>
       <h2>I was asked to design new t-shirts for MGCS's 2023 school year theme. I created alternate designs with a different theme and got some great pictures of the shirts in action!</h2>
     </div>
-    
+
   <div className="portfolio-detail-item portfolio-item-large2">
       <img src={pic1} className="portfolio-detail-item" />
     </div>

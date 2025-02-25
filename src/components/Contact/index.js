@@ -49,7 +49,7 @@ const Contact = () => {
     <div className={`home-page ${applyContactClass ? "contact" : ""}`}>
       {/* Background Image */}
       <div
-        className={`background-image ${applyContactClass ? "contact" : ""}`}
+        className={`background-image contact-switch ${applyContactClass ? "contact" : ""}`}
         style={{ 
           // transform: `translate(${(mousePosition.x - 50) / 50}%, ${(mousePosition.y - 50) / 50}%)`,
           filter: `brightness(${brightness}%) blur(0px)`,
@@ -65,10 +65,14 @@ const Contact = () => {
           GRAPHIC DESIGN + MUSIC
         </h3>
         <div className='flat-square'>
-          <h3>Email: nashsteed13@gmail.com</h3>
+          <h3 >Email: nashsteed13@gmail.com</h3>
           <br />
           <h3>Phone: (804)-219-7366</h3>
         </div>
+        <a href="https://www.linkedin.com/in/nash-steed/" 
+  className="flat-button center contact-button fadeInUp" 
+  target="_blank" 
+  rel="noopener noreferrer">LinkedIn</a>
       </div>
     </div>
   )

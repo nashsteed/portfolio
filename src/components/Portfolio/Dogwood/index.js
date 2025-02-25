@@ -55,7 +55,7 @@ const Dogwood = () => {
 
   <div className="portfolio-detail-item portfolio-item-large" align-self="center" >
       <h1>Logo Redesign</h1>
-      <h2>Client: Dogwood Land Development</h2>
+      <h2 className="client">Client: Dogwood Land Development</h2>
       <h2>A land development company based in Wilmington, NC contacted me about redesigning their logo. They wanted to maintain the iconic dogflower aesthetic but wanted it to look modern and cleaner. I had a blast designing this for them and getting to see it put in action!</h2>
     </div>
 

@@ -81,7 +81,7 @@ const DeepWaters = () => {
         
         <div className="portfolio-detail-item portfolio-item-large">
           <h1>Deep Waters Portal App Designs</h1>
-          <h2>Client: Deep Waters Mentoring</h2>
+          <h2 className='client'>Client: Deep Waters Mentoring</h2>
         </div>
 
         

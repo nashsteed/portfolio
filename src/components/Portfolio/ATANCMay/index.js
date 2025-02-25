@@ -20,8 +20,8 @@ const ATANCMay = () => {
 
 
   <div className="portfolio-detail-item portfolio-item-large2" align-self="center" >
-      <h1>Abilities Tennis Association of North Carolina: National Tennis Month Ads</h1>
-      <h2>Client: Abilities Tennis Association of North Carolina</h2>
+      <h1>ATANC: National Tennis Month Ads</h1>
+      <h2 className="client">Client: Abilities Tennis Association of North Carolina</h2>
       <h2>I volunteer for a tennis organization that provides clinics and tournaments for athletes with intellectual disabilities. I had the opportunity to design these advertisements for them to post on social media and promote playing tennis in the month of May! Abilities Tennis Association of NC serves over 600 athletes with 32 programs across the state of NC. </h2>
     </div>
 
