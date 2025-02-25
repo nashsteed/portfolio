@@ -91,7 +91,7 @@
   opacity: 0;
   cursor: pointer;
   // animation: fadeInItem 1s forwards; 
-  overflow-x: hidden;  /* Hide any horizontal overflow */
+  overflow-x: visible;  /* Hide any horizontal overflow */
   position: relative;/* Fade-in effect for items */
   animation: 1.5s fadeIn forwards;
   animation-delay: 0.5s;

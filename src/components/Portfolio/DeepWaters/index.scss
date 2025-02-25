@@ -22,12 +22,12 @@
   
   /* Position left arrow */
   .arrow-button.left {
-    left: 100px; /* 50px from the left side of the screen */
+    left: -4rem;/* 50px from the left side of the screen */
   }
   
   /* Position right arrow */
   .arrow-button.right {
-    right: 100px; /* 10px from the right side of the screen */
+    right: -4rem;
   }
   
   /* Removing outline when arrows are focused */
@@ -53,13 +53,6 @@
     z-index: 1; /* Ensure arrows are above the image */
   }
   
-  .arrow-button.left {
-    left: 10px; /* Position left arrow */
-  }
-  
-  .arrow-button.right {
-    right: 10px; /* Position right arrow */
-  }
   
   .portfolio-detail-item {
     width: 100%; /* Ensure the image takes up the full width of its container */
