@@ -3,8 +3,8 @@
     border: 2px solid #d6b588;
     border-radius: 0.625rem;
     color: #d6b588;
-    font-size: 1.25rem;
-    padding: 1rem 1.5rem;
+    font-size: 1.75rem;
+    padding: 1rem 2rem;
     cursor: pointer;
     font-family: Greycliff;
     letter-spacing: 0.25rem;
@@ -26,6 +26,14 @@
     background-color: #424874;
     border: 2px solid #424874;
 }
+
+.button-lightblue, .button-blue-hover:hover{
+    background-color: #88a9d6;
+    border: 2px solid #88a9d6;
+    color: white;
+}
+
+
 
 .button-green, .button-green-hover:hover{
     background-color: #537A5A;

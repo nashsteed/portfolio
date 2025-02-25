@@ -11,6 +11,13 @@ $primary-color: #fff;
 }
 
 @font-face {
+  font-family: 'Greycliff Heavy';
+  src: url('./assets/fonts/Greycliff-CF-Heavy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
   font-weight: normal;

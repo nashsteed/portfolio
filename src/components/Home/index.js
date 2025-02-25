@@ -9,7 +9,7 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 })
   const [grayscale, setGrayscale] = useState(0)
-  const [brightness, setBrightness] = useState(40)
+  const [brightness, setBrightness] = useState(22)
   const [opacity, setOpacity] = useState(0) // Start fully grayscale
 
   const jobArray = ['G', 'R', 'A', 'P', 'H', 'I', 'C', ' ', 'D', 'E', 'S', 'I', 'G', 'N', ' ', '+', ' ', 'M', 'U', 'S', 'I', 'C']
@@ -29,7 +29,7 @@ const Home = () => {
       // Normalize grayscale: 100% at edges, 0% at center
       const exponent = 2; // Increase this value for a more aggressive effect
 const grayscale = Math.min(100, Math.pow(distanceFromCenter / 50, exponent) * 100)
-const brightness = 30 + (grayscale / 100) * 20;
+const brightness = 10 + (grayscale / 100) * 10;
 
 setBrightness(brightness)
       setGrayscale(grayscale)
@@ -46,8 +46,8 @@ setBrightness(brightness)
         <div
           className="background-image"
           style={{ 
-            transform: `translate(${(mousePosition.x - 50) /30}%, ${(mousePosition.y - 50) / 30}%)`,
-            filter: `brightness(${brightness}%) blur(0px) grayscale(${grayscale}%)` ,
+            transform: `translate(${(mousePosition.x - 50) /50}%, ${(mousePosition.y - 50) / 50}%)`,
+            filter: `brightness(${brightness}%) blur(0px)` ,
           }}
         >
           <div className="grid-item"><img src={testBG} alt="Work 1" /></div>

@@ -24,7 +24,7 @@ export const MenuBar = () => {
             </div>
             <div className="menubar-div-side">
             {location.pathname !== "/" && location.pathname !== "/contact" && (
-                <Link className="button button-lightblue-hover" to="/contact" >Contact</Link>
+                <Link className="button button-lightblue-hover hide-on-mobile" to="/contact">Contact</Link>
             )}
             </div>
         </nav>

@@ -1,72 +1,77 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
+import { Link, useLocation } from 'react-router-dom'
 import './index.scss'
+import testBG from '../../assets/images/testBG.png'
 
 const Contact = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 })
+  const [grayscale, setGrayscale] = useState(0)
+  const [brightness, setBrightness] = useState(22)
+  const [applyContactClass, setApplyContactClass] = useState(false) // <-- Store in state
 
-  const nameArray = ['N','a','s','h',' ','S','t','e','e','d']
-  const jobArray = [
-    'G',
-    'r',
-    'a',
-    'p',
-    'h',
-    'i',
-    'c',
-    ' ',
-    'D',
-    'e',
-    's',
-    'i',
-    'g',
-    'n',
-    ' ',
-    '+',
-    ' ',
-    'M',
-    "u",
-    's',
-    'i',
-    'c',
-  ]
+  const location = useLocation();
 
+  useEffect(() => {
+    // Check if the last visited page was "/"
+    const lastRoute = localStorage.getItem('lastRoute');
+    if (lastRoute === "/") {
+      setApplyContactClass(true);
+    }
+
+    // Store the current route as the last route for the next navigation
+    localStorage.setItem('lastRoute', location.pathname);
+  }, [location.pathname]); // Runs only when route changes
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const xPercent = (e.clientX / window.innerWidth) * 100
+      const yPercent = (e.clientY / window.innerHeight) * 100
+
+      setMousePosition({ x: xPercent, y: yPercent })
+
+      const distanceFromCenter = Math.sqrt(
+        Math.pow(xPercent - 50, 2) + Math.pow(yPercent - 50, 2)
+      )
+
+      const exponent = 2;
+      const grayscale = Math.min(100, Math.pow(distanceFromCenter / 50, exponent) * 100)
+      const brightness = 10 + (grayscale / 100) * 10;
+
+      setBrightness(brightness)
+      setGrayscale(grayscale)
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
 
   return (
-    <>
-      <div className="home-page gradient-background">
-        <div className="text-zone">
-          <h1>
-            <AnimatedLetters className="text-non-animate"
-              letterClass="text-animate-hover"
-              strArray={nameArray}
-              idx={15}
-            />
-            <br />
-            
-          </h1>
-          <h3><AnimatedLetters className="text-non-animate"
-              letterClass="text-animate-hover"
-              strArray={jobArray}
-              idx={20}
-            /></h3>
-          <h2></h2>
-          <h3 class="flat-square">
-            Email: 
-            <br></br>
-            nashsteed13@gmail.com
-            <br></br>
-            Phone: 
-            <br></br>
-            (804)-219-7366
-          </h3>
-        </div>
+    <div className={`home-page ${applyContactClass ? "contact" : ""}`}>
+      {/* Background Image */}
+      <div
+        className={`background-image ${applyContactClass ? "contact" : ""}`}
+        style={{ 
+          // transform: `translate(${(mousePosition.x - 50) / 50}%, ${(mousePosition.y - 50) / 50}%)`,
+          filter: `brightness(${brightness}%) blur(0px)`,
+        }}
+      >
+        <div className="grid-item"><img src={testBG} alt="Work 1" /></div>
       </div>
 
-    </>
+      {/* Foreground Text */}
+      <div className="text-zone">
+        <h1 className={applyContactClass ? "contact" : ""}>NASH STEED</h1>
+        <h3 className={applyContactClass ? "contact" : ""}>
+          GRAPHIC DESIGN + MUSIC
+        </h3>
+        <div className='flat-square'>
+          <h3>Email: nashsteed13@gmail.com</h3>
+          <br />
+          <h3>Phone: (804)-219-7366</h3>
+        </div>
+      </div>
+    </div>
   )
 }
 
-export default Contact
+export default Contact;

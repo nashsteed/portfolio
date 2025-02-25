@@ -11,9 +11,9 @@ export const TabBar = () => {
     
     return (
         <nav className="tabbar-nav">
-            <Link className={clsx("button button-green-hover",location.pathname.includes("portfolio") && "button-green")} to="/portfolio">Design</Link>
-            <Link className={clsx("button button-blue-hover",location.pathname.includes("music") && "button-blue")}to="/music" >Music</Link>
-            <Link className={clsx("button button-red-hover",location.pathname.includes("art") && "button-red")}to="/art" >Art</Link>
+            <Link className={clsx("button button-lightblue-hover",location.pathname.includes("portfolio") && "button-lightblue")} to="/portfolio">Design</Link>
+            <Link className={clsx("button button-lightblue-hover",location.pathname.includes("music") && "button-lightblue")}to="/music" >Music</Link>
+            <Link className={clsx("button button-lightblue-hover",location.pathname.includes("art") && "button-lightblue")}to="/art" >Art</Link>
         </nav>
     )
 }

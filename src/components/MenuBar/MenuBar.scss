@@ -35,3 +35,9 @@
 .menubar-icon-link:hover {
     color: #88A9D6;
 }
+
+@media screen and (max-width: 500px) {
+    .hide-on-mobile {
+      display: none !important;
+    }
+  }

@@ -17,8 +17,18 @@ import Music from './components/Portfolio/Music'
 import Art from './components/Portfolio/Art'
 import Dogwood from './components/Portfolio/Dogwood'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 function App() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // Save the last route before navigating
+    localStorage.setItem('lastRoute', location.pathname);
+  }, [location.pathname]);
+
   return (
     <>
     <ScrollToTop/>
