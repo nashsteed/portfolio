@@ -67,7 +67,7 @@ const Contact = () => {
         <div className='flat-square'>
           <h3 >Email: nashsteed13@gmail.com</h3>
           <br />
-          <h3>Phone: (804)-219-7366</h3>
+          <h3>Phone: (804) 219-7366</h3>
         </div>
         <a href="https://www.linkedin.com/in/nash-steed/" 
   className="flat-button center contact-button fadeInUp" 

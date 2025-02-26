@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
+import  '../../Contact/index.scss'
+import './aboutButton.scss'
 
 import gradPhoto from '../../../assets/images/gradphoto.webp'
 
@@ -25,7 +27,14 @@ const About = () => {
 I graduated from the University of Virginia in 2024 as an Echols Scholar with a Bachelor's Degree in Computer Science and a minor in Applied Statistics. Collaborating with people to bring their ideas to life is a priceless joy in this world. Creativity, passion, and a bit of fun are at the heart of everything I do. I hope to bring a smile to every project I take on.
 
 </h2>
+<br></br>
+
+<a href="/resume" 
+  className="flat-button2 center contact-button2 fadeInUp" 
+>Resume</a>
     </div>
+
+    
 
     
 

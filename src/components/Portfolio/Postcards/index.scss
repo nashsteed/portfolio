@@ -132,7 +132,7 @@
   pointer-events: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
   .portfolio-item-grid {
     margin-top: 125px;
     grid-template-columns: 1fr; /* Even smaller grid items */

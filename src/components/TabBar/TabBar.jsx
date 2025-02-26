@@ -7,7 +7,7 @@ import { clsx } from "clsx";
 export const TabBar = () => {
     const location = useLocation(); // Get the current path
 
-    if (location.pathname === "/" || location.pathname === "/about" || location.pathname === "/contact") return null;
+    if (location.pathname === "/" || location.pathname === "/about" || location.pathname === "/contact" || location.pathname === "/resume") return null;
     
     return (
         <nav className="tabbar-nav">

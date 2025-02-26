@@ -19,6 +19,7 @@ import Dogwood from './components/Portfolio/Dogwood'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import Resume from './components/Portfolio/Resume'
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path ="contact" index element={<Contact />} />
+          <Route path ="resume" index element={<Resume />} />
           <Route path ="portfolio" index element={<Portfolio />} />
           <Route path="portfolio/city-postcards" element={<Postcards />} />
           <Route path="portfolio/bb-king-poster" element={<MusicPoster />} />
