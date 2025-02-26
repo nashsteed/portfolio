@@ -28,14 +28,14 @@ const Music = () => {
         {/* Correct iframe embed with inline style */}
         <div className="portfolio-detail-item portfolio-item-large">
         <iframe
-          style={{ borderRadius: '12px' }}
-          src="https://open.spotify.com/embed/album/0cn0gOmaUEFWNFCUUP7Lm8?utm_source=generator&theme=0"
-          width="100%"
-          height="352"
-          frameBorder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        ></iframe>
-      </div>
+        rel="preload"
+  allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+  frameBorder="0"
+  height="450"
+  style={{ width: "100%", maxWidth: "660px", overflow: "hidden", borderRadius: "10px" }}
+  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+  src="https://embed.music.apple.com/us/album/cast-your-sails/1701915477"
+></iframe>      </div>
 
       <div className="portfolio-detail-item portfolio-item-large2">
         <h1></h1>
@@ -50,16 +50,16 @@ const Music = () => {
 
         {/* Correct iframe embed with inline style */}
         <div className="portfolio-detail-item portfolio-item-large">
-  <iframe
-    style={{ borderRadius: '12px' }}
-    src="https://open.spotify.com/embed/album/7JZ6BjmFL2Y7oa2t9vTSs4?utm_source=generator"
-    width="100%"
-    height="352"
-    frameBorder="0"
-    allowFullScreen
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy"
-  ></iframe>
+        <iframe
+  allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+  frameBorder="0"
+  height="450"
+  loading="lazy"  // Added lazy loading for better performance
+  style={{ width: "100%", maxWidth: "660px", overflow: "hidden", borderRadius: "10px" }} // Fixed style syntax
+  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+  src="https://embed.music.apple.com/us/album/rainfall-single/1662712191"
+></iframe>
+
 </div>
 
 <div className="portfolio-detail-item portfolio-item-large2">
@@ -76,15 +76,15 @@ const Music = () => {
         {/* Correct iframe embed with inline style */}
         <div className="portfolio-detail-item portfolio-item-large">
         <iframe
-  style={{ borderRadius: '12px' }}  // Correct inline styling
-  src="https://open.spotify.com/embed/album/0uPyW02ssqxfX0Dgqbb8CG?utm_source=generator"
-  width="100%"
-  height="352"
+  allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
   frameBorder="0"
-  allowFullScreen  // Correct boolean attribute name
-  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-  loading="lazy"
-/>
+  height="450"
+  loading="lazy"  // Lazy loading for better performance
+  style={{ width: "100%", maxWidth: "660px", overflow: "hidden", borderRadius: "10px" }} // React-compatible style
+  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+  src="https://embed.music.apple.com/us/album/a-kids-castle-single/1635008288"
+></iframe>
+
 
 </div>
 
@@ -102,15 +102,15 @@ const Music = () => {
         {/* Correct iframe embed with inline style */}
         <div className="portfolio-detail-item portfolio-item-large">
         <iframe
-  style={{ borderRadius: '12px' }}  // Correct inline styling
-  src="https://open.spotify.com/embed/album/4xddPHNA4Gz8kuHS8HRIAe?utm_source=generator"
-  width="100%"
-  height="352"
+  allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
   frameBorder="0"
-  allowFullScreen  // Correct boolean attribute name in React
-  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-  loading="lazy"
-/>
+  height="450"
+  loading="lazy"  // Improves page load speed
+  style={{ width: "100%", maxWidth: "660px", overflow: "hidden", borderRadius: "10px" }} // React-friendly syntax
+  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+  src="https://embed.music.apple.com/us/album/color-the-stars-single/1632058608"
+></iframe>
+
 
 
 </div>
