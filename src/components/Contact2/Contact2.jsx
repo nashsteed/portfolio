@@ -38,7 +38,10 @@ const Contact2 = () => {
                 </div>
             
             <div className='buttons'>
-              <Link to="/contact" className="flat-button3 right2">LinkedIn</Link>
+              <a
+              href="https://www.linkedin.com/in/nash-steed/"
+  target="_blank" 
+  rel="noopener noreferrer"className="flat-button3 right2">LinkedIn</a>
             </div>
           </div>
         )}
