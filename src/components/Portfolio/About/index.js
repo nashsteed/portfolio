@@ -28,6 +28,8 @@ I graduated from the University of Virginia in 2024 as an Echols Scholar with a 
 
 </h2>
 <br></br>
+<br></br>
+<br></br>
 
 <a href="/resume" 
   className="flat-button2 center contact-button2 fadeInUp" 

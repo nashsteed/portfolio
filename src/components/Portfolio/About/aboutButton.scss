@@ -1,22 +1,21 @@
 .flat-button2 {
-    position: relative;
-    background: transparent;
-    color: black;
-    font-size: 4rem;
-    width: 10rem;
+    color: #fff;
+    font-size: 23px;
+    background: #88A9D6;;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: 'Greycliff Heavy';
     text-decoration: none;
-    padding: 20px 20px;
-    border: 2px solid black !important;
+    padding: 10px 30px;
+    border: 2px solid #e6e6dd;
+    border-radius: 5px;
     white-space: nowrap;
-    display: block;
+    background-blend-mode:screen !important;
 
     &:hover {
-      background: #88A9D6;
+      background: white;
       border: 2px solid #fff !important;
-      color: #fff;
+      color: #88A9D6;
       z-index: 1000;
     }
 }

@@ -147,6 +147,9 @@
         border-radius: 5px;
         white-space: nowrap;
         background-blend-mode:screen !important;
+        opacity: 0;
+        animation: fadeInUp 0.5s 0.5s forwards;
+        margin-bottom: -5rem;
       }
   
     .buttons {
@@ -218,8 +221,13 @@
 
     h3 {
       font-size: 4rem;
-      line-height: 4rem;
+      line-height: 10rem;
     }
+
+    h4 {
+        font-size: 3rem;
+        line-height: 10rem;
+      }
 
     img{
         margin-top: 20rem;
@@ -248,6 +256,11 @@
             width: 65%;
         }
     
+
+        h4 {
+            font-size: 1.25rem;
+            line-height: 4rem;
+          }
     
         .buttons {
             display: flex;
