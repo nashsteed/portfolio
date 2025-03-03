@@ -5,10 +5,11 @@ $primary-color: #fff;
 
 @font-face {
   font-family: 'Greycliff';
-  src: url('./assets/fonts/Greycliff-CF-Bold.otf') format('opentype');
+  src: url('./assets/fonts/IntervogueSoftAlt-Bold.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
+
 
 @font-face {
   font-family: 'Greycliff Medium';
@@ -19,7 +20,7 @@ $primary-color: #fff;
 
 @font-face {
   font-family: 'Greycliff Heavy';
-  src: url('./assets/fonts/Greycliff-CF-Heavy.otf') format('opentype');
+  src: url('./assets/fonts/IntervogueSoftAlt-Black.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }

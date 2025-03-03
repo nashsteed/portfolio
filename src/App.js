@@ -20,6 +20,8 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Resume from './components/Portfolio/Resume'
+import Home2 from './components/Home2/Home2'
+import Contact2 from './components/Contact2/Contact2'
 
 function App() {
 
@@ -36,8 +38,8 @@ function App() {
       <Routes>
         
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path ="contact" index element={<Contact />} />
+          <Route index element={<Home2 />} />
+          <Route path ="contact" index element={<Contact2 />} />
           <Route path ="resume" index element={<Resume />} />
           <Route path ="portfolio" index element={<Portfolio />} />
           <Route path="portfolio/city-postcards" element={<Postcards />} />
