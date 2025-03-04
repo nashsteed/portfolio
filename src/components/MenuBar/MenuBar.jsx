@@ -5,6 +5,8 @@ import { faHome, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import buttonStyles from "../Button/button.scss"
 import nashLogo from "../../assets/images/logoNash.png"
+import nashLogoHome from "../../assets/images/logo nash2.png"
+
 
 export const MenuBar = () => {
     const location = useLocation(); // Get the current path
@@ -20,7 +22,12 @@ export const MenuBar = () => {
             </div>
             <div className="menubar-div-center">
             <Link className="menubar-icon-link" to="/">
-                <img className='menubar-img' src={nashLogo} />
+            {!location.pathname.includes("portfolio") && (
+                <img className='menubar-img' src={nashLogoHome} />
+            )}
+            {location.pathname.includes("portfolio") && (
+                <img className='menubar-img' src={nashLogoHome} />
+            )}
             </Link>
             </div>
             <div className="menubar-div-side">

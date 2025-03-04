@@ -1,8 +1,8 @@
 .button {
-    background-color: transparent;
-    border: 2px solid #d6b588;
+    background-color: #88a9d6;
+    border: 2px solid #88a9d6;
     border-radius: 0.625rem;
-    color: #d6b588;
+    color: white;
     font-size: 1.75rem;
     padding: 1rem 2rem;
     cursor: pointer;
@@ -12,8 +12,8 @@
 }
 
 .button-lightblue-hover:hover {
-    background-color: #88a9d6;
-    border: 2px solid #88a9d6;
+    background-color: white;
+    border: 2px solid white;
     color: white;
 }
 
@@ -28,9 +28,9 @@
 }
 
 .button-lightblue, .button-blue-hover:hover{
-    background-color: #88a9d6;
-    border: 2px solid #88a9d6;
-    color: white;
+    background-color: white;
+    border: 2px solid white;
+    color: #88a9d6;
 }
 
 
@@ -39,4 +39,36 @@
     background-color: #537A5A;
     border: 2px solid #537A5A;
 }
+
+
+.button-lightblue-hover:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: #88a9d6;
+}
+
+.button-red, .button-red-hover:hover{
+    background-color: #D05353;
+    border: 2px solid #D05353;
+}
+
+.button-blue, .button-blue-hover:hover{
+    background-color: #424874;
+    border: 2px solid #424874;
+}
+
+// .button-lightblue, .button-blue-hover:hover{
+//     background-color: #88a9d6;
+//     border: 2px solid #88a9d6;
+//     color: white;
+// }
+
+
+
+// .button-green, .button-green-hover:hover{
+//     background-color: #537A5A;
+//     border: 2px solid #537A5A;
+// }
+
+
 
