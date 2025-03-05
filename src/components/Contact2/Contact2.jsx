@@ -33,7 +33,7 @@ const Contact2 = () => {
             </h3>
 
             <div className="flat-square-contact">
-                <h4>EMAIL: NASHSTEED13@GMAIL.COM</h4>
+                <h4>EMAIL: NASHSTEED.DESIGN@GMAIL.COM</h4>
                 <h4>PHONE: (804) 219-7366</h4>
                 </div>
             
