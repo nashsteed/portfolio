@@ -1,0 +1,19 @@
+.bottom-div {
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Just for visibility */
+  text-align: center;
+  justify-self: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  z-index: 10000;
+  margin-top: 4rem;
+  background: linear-gradient(to top, #e6e6dd 60%, rgba(230, 230, 221, 0) 100%);
+
+}
+
+h5 {
+font-family: Greycliff;
+color:#44487a
+}

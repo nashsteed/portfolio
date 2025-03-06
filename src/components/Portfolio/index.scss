@@ -149,8 +149,10 @@
     margin-top: 125px;
     grid-template-columns: 1fr; /* Even smaller grid items */
     padding: 10px;
+    padding-bottom: 5rem;
     gap: 15px;
-    display: grid; /* Even smaller gap between items */
+    display: grid;
+    width: 95%; /* Even smaller gap between items */
   }
 
   /* Make sure portfolio items remain tappable */

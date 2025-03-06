@@ -11,10 +11,16 @@ import MeantToBeeStrawberryAd from '../../assets/images/MeantToBee Ad Strawberry
 import MeantToBeeCinnamonAd from '../../assets/images/MeantToBee Ad Cinnamon.webp';
 import MeantToBeeStrawberry from '../../assets/images/MeantToBee Strawberry.png';
 import deepWatersMock from '../../assets/images/DeepWatersMock.webp';
+import deepWatersPreview from '../../assets/images/DEEP-WATERS-PREVIEW.png';
+import meantToBeePreview from '../../assets/images/MEANT-TO-BEE-PREVIEW.png';
+import postcardsPreview from '../../assets/images/postcards-preview.png';
 import phoneMock from '../../assets/images/DeepWatersSlides/phoneMock.webp';
 import red1 from '../../assets/images/ATANC MAY/red1.webp';
 import blueBlank from '../../assets/images/ATANC MAY/blueBlank.webp';
 import Lottie from 'react-lottie'
+import jamesPreview from '../../assets/images/JAMES-BOND-PREVIEW.png';
+import tennisPreview from '../../assets/images/tennis-previews.png';
+
 
 import businessCards from '../../assets/images/dogwood-business-cards.webp'; 
 
@@ -104,40 +110,21 @@ const Portfolio = () => {
           </div>
         </Link> */}
 
-<Link to="/portfolio/deep-waters" className="portfolio-item portfolio-item-large">
+<Link to="/portfolio/deep-waters" className="portfolio-item portfolio-item-large2">
           <img 
             ref={setImageRef} 
-            src={deepWatersMock} 
+            src={deepWatersPreview} 
             alt="Portfolio 1" 
             loading="lazy"
             onLoad={() => handleImageLoad(2)} 
           />
         </Link>
 
-        <Link to="/portfolio/deep-waters" className="portfolio-item portfolio-item-large">
-          <img 
-            ref={setImageRef} 
-            src={phoneMock} 
-            alt="Portfolio 1" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(3)} 
-          />
-        </Link>
 
-<Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large">
+<Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large2">
           <img 
             ref={setImageRef} 
-            src={MeantToBeeStrawberry} 
-            alt="Portfolio 1" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(1)} 
-          />
-        </Link>
-
-        <Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large">
-          <img 
-            ref={setImageRef} 
-            src={MeantToBeeCinnamonAd} 
+            src={meantToBeePreview} 
             alt="Portfolio 1" 
             loading="lazy"
             onLoad={() => handleImageLoad(1)} 
@@ -158,30 +145,21 @@ const Portfolio = () => {
 
         
 
-        <Link to="/portfolio/atanc-national-tennis-month" className="portfolio-item portfolio-item-large">
+        <Link to="/portfolio/atanc-national-tennis-month" className="portfolio-item portfolio-item-large2">
           <img 
             ref={setImageRef} 
-            src={blueBlank} 
+            src={tennisPreview} 
             alt="Portfolio 2" 
             loading="lazy"
             onLoad={() => handleImageLoad(4)} 
           />
         </Link>
 
-        <Link to="/portfolio/atanc-national-tennis-month" className="portfolio-item portfolio-item-large">
-          <img 
-            ref={setImageRef} 
-            src={red1} 
-            alt="Portfolio 2" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(5)} 
-          />
-        </Link>
 
-        <Link to="/portfolio/city-postcards" className="portfolio-item portfolio-item-medium">
+        <Link to="/portfolio/city-postcards" className="portfolio-item portfolio-item-large2">
           <img 
             ref={setImageRef} 
-            src={postcards} 
+            src={postcardsPreview} 
             alt="Portfolio 2" 
             loading="lazy"
             onLoad={() => handleImageLoad(6)} 
