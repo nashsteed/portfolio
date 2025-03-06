@@ -15,7 +15,7 @@
 /* Portfolio Grid Styles */
 .portfolio-grid {
   align-items: start;
-  margin: 12.5rem auto;
+  margin: 20.5rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Flexible columns with min size */
  /* Automatically adjust rows */
@@ -140,25 +140,25 @@
 
 /* Hover effect for portfolio items */
 .portfolio-item:hover {
-  transform: scale(1.1); /* Slight zoom effect */
+  transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Responsive Layout for Smaller Screens */
 @media (max-width: 480px) {
   .portfolio-grid {
-    margin-top: 125px;
+    margin-top: 15rem;
     grid-template-columns: 1fr; /* Even smaller grid items */
     padding: 10px;
     padding-bottom: 5rem;
     gap: 15px;
     display: grid;
-    width: 95%; /* Even smaller gap between items */
+    width: 100%; /* Even smaller gap between items */
   }
 
   /* Make sure portfolio items remain tappable */
   .portfolio-item {
     grid-column: span 2;
-    padding: 20px; /* Add some padding for touch targets */
+    padding: 10px; /* Add some padding for touch targets */
   }
 
   .portfolio-item-large {

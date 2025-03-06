@@ -9,6 +9,9 @@ import Cinnamon from '../../../assets/images/MeantToBee Cinnamon.webp'
 import StrawberryAd from '../../../assets/images/MeantToBee Ad Strawberry.webp'
 import BlueberryAd from '../../../assets/images/MeantToBee Ad Blueberry.webp'
 import CinnamonAd from '../../../assets/images/MeantToBee Ad Cinnamon.webp'
+import StrawberryBoxes from '../../../assets/images/STRAWBERRY-BOXES.png'
+import BlueberryBoxes from '../../../assets/images/BLUEBERRY-BOXES.png'
+import CinnamonBoxes from '../../../assets/images/CINNAMON-BOXES.png'
 
 const MeantToBee = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient
@@ -35,6 +38,10 @@ const MeantToBee = () => {
       <img src={StrawberryAd} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
 
+    <div className="portfolio-detail-item portfolio-item-large2">
+      <img src={StrawberryBoxes} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
     <div className="portfolio-detail-item portfolio-item-large">
       <img src={Blueberry} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
@@ -43,12 +50,20 @@ const MeantToBee = () => {
       <img src={BlueberryAd} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
 
+    <div className="portfolio-detail-item portfolio-item-large2">
+      <img src={BlueberryBoxes} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
     <div className="portfolio-detail-item portfolio-item-large">
       <img src={Cinnamon} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
 
     <div className="portfolio-detail-item portfolio-item-large2">
       <img src={CinnamonAd} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
+    <div className="portfolio-detail-item portfolio-item-large2">
+      <img src={CinnamonBoxes} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
 
 

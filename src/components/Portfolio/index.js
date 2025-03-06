@@ -19,6 +19,7 @@ import red1 from '../../assets/images/ATANC MAY/red1.webp';
 import blueBlank from '../../assets/images/ATANC MAY/blueBlank.webp';
 import Lottie from 'react-lottie'
 import jamesPreview from '../../assets/images/JAMES-BOND-PREVIEW.png';
+import dogwoodPreview from '../../assets/images/DOGWOOD-PREVIEW.png';
 import tennisPreview from '../../assets/images/tennis-previews.png';
 
 
@@ -76,20 +77,22 @@ const Portfolio = () => {
   return (
     <div className={`portfolio ${backgroundClass}`}>
       <div className="portfolio-grid">
-        <Link to="/portfolio/james-bond-books" className="portfolio-item portfolio-item-large">
+        
+
+        <Link to="/portfolio/dogwood" className="portfolio-item portfolio-item-large2">
           <img 
             ref={setImageRef} 
-            src={goldeneye} 
+            src={dogwoodPreview} 
             alt="Portfolio 1" 
             loading="lazy"
             onLoad={() => handleImageLoad(0)} 
           />
         </Link>
 
-        <Link to="/portfolio/dogwood" className="portfolio-item portfolio-item-large">
+        <Link to="/portfolio/james-bond-books" className="portfolio-item portfolio-item-large2">
           <img 
             ref={setImageRef} 
-            src={businessCards} 
+            src={jamesPreview} 
             alt="Portfolio 1" 
             loading="lazy"
             onLoad={() => handleImageLoad(0)} 
