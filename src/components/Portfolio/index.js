@@ -21,6 +21,7 @@ import Lottie from 'react-lottie'
 import jamesPreview from '../../assets/images/JAMES-BOND-PREVIEW.png';
 import dogwoodPreview from '../../assets/images/DOGWOOD-PREVIEW.png';
 import tennisPreview from '../../assets/images/tennis-previews.png';
+import springPreview from '../../assets/images/SPRING-BREAK-PREVIEW.png';
 
 
 import businessCards from '../../assets/images/dogwood-business-cards.webp'; 
@@ -89,6 +90,16 @@ const Portfolio = () => {
           />
         </Link>
 
+        <Link to="/portfolio/spring-break" className="portfolio-item portfolio-item-large2">
+          <img 
+            ref={setImageRef} 
+            src={springPreview} 
+            alt="Portfolio 1" 
+            loading="lazy"
+            onLoad={() => handleImageLoad(7)} 
+          />
+        </Link>
+
         <Link to="/portfolio/james-bond-books" className="portfolio-item portfolio-item-large2">
           <img 
             ref={setImageRef} 
@@ -133,6 +144,8 @@ const Portfolio = () => {
             onLoad={() => handleImageLoad(1)} 
           />
         </Link>
+
+        
 
         <Link to="/portfolio/mgcs-shirts" className="portfolio-item portfolio-item-large2">
           <img 

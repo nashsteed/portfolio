@@ -22,6 +22,7 @@ import { useEffect } from 'react'
 import Resume from './components/Portfolio/Resume'
 import Home2 from './components/Home2/Home2'
 import Contact2 from './components/Contact2/Contact2'
+import SpringBreak from './components/Portfolio/SpringBreak/SpringBreak'
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="portfolio/deep-waters" element={<DeepWaters />} />
           <Route path="portfolio/atanc-national-tennis-month" element={<ATANCMay />} />
           <Route path="portfolio/dogwood" element={<Dogwood />} />
+          <Route path="portfolio/spring-break" element={<SpringBreak />} />
           <Route path="about" element={<About />} />
           <Route path="music" element={<Music />} />
           <Route path="art" element={<Art />} />

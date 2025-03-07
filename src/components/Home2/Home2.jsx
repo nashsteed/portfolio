@@ -9,7 +9,7 @@ const Home2 = () => {
   const [letterClass, setLetterClass] = useState('text-hidden') // Start hidden
   const [isLoaded, setIsLoaded] = useState(false) // Track if fully loaded
 
-  const jobArray = ['G', 'R', 'A', 'P', 'H', 'I', 'C', ' ', 'D', 'E', 'S', 'I', 'G', 'N', ' ', '+', ' ', 'M', 'U', 'S', 'I', 'C']
+  const jobArray = ['G', 'R', 'A', 'P', 'H', 'I', 'C', ' ', 'D', 'E', 'S', 'I', 'G', 'N', ',', ' ', 'W', 'E', 'B', ' ', 'D', 'E','V','E','L','O','P','E','R']
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -30,7 +30,7 @@ const Home2 = () => {
         {isLoaded && ( // Ensure animation only starts after image loads
           <div>
             <h3>
-              <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={12} />
+              <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={4} />
             </h3>
             <div className='buttons'>
               <Link to="/about" className="flat-button3 left2">About</Link>
