@@ -30,7 +30,7 @@ const SpringBreak = () => {
   <div className="portfolio-detail-item portfolio-item-large2" align-self="center" >
       <h1>Navigators Spring Break Trip Booklets</h1>
       <h2 className="client">Client: The Navigators at Penn State</h2>
-      <h2>With about 80 students traveling to North Carolina for a Spring Break trip, we wanted some nice booklets for each student to help guide them through the week. I was given the opportunity to design these booklets, and they turned out great!</h2>
+      <h2>With a very large group of students traveling out of state for a spring break community service trip, the Navigators at Penn State needed well-designed booklets to help guide each student through the week.</h2>
     </div>
 
     <div className="portfolio-detail-item portfolio-item-large">

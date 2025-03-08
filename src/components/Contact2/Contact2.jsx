@@ -76,15 +76,17 @@ const Contact2 = () => {
             </h3>
 
             <div className="flat-square-contact">
-                <h4>EMAIL: NASHSTEED.DESIGN@GMAIL.COM</h4>
-                <h4>PHONE: (804) 219-7366</h4>
+                <h4>EMAIL: </h4>
+                  <h4>NASHSTEED.DESIGN@GMAIL.COM</h4>
+                <h4>PHONE:</h4>
+                <h4>804.219.7366</h4>
                 </div>
 
-            <div className="buttons">
+            {/* <div className="buttons">
               <a href="https://www.linkedin.com/in/nash-steed/" target="_blank" rel="noopener noreferrer" className="flat-button3 right2">
                 LinkedIn
               </a>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
