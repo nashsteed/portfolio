@@ -14,7 +14,7 @@ const Music = () => {
   return (
     <div className={`portfolio ${backgroundClass}`}>
       <div className="portfolio-item-grid music-art">
-      <div className="portfolio-detail-item portfolio-item-large2">
+      <div className="portfolio-detail-item portfolio-item-large2 art">
         <h1></h1>
           <h1> Cast Your Sails</h1>
           <h2>Album</h2>
@@ -37,7 +37,23 @@ const Music = () => {
   src="https://embed.music.apple.com/us/album/cast-your-sails/1701915477"
 ></iframe>      </div>
 
-      <div className="portfolio-detail-item portfolio-item-large2">
+
+<div className="portfolio-detail-item portfolio-item-large2 art">
+        <h1></h1>
+          <h1> Here With You (Marco King ft. Nash Steed)</h1>
+          <h2>Single</h2>
+          <h2>Released: 2025</h2>
+        </div>
+
+        <div className="portfolio-detail-item portfolio-item-large2">
+          <div className="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DeHLCZv19Ng?si=aYZtCM5JU2BO1pX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+        </div>
+
+        
+
+
+      <div className="portfolio-detail-item portfolio-item-large2 art">
         <h1></h1>
           <h1>Rainfall</h1>
           <h2>Single</h2>
@@ -62,7 +78,7 @@ const Music = () => {
 
 </div>
 
-<div className="portfolio-detail-item portfolio-item-large2">
+<div className="portfolio-detail-item portfolio-item-large2 art">
         <h1></h1>
           <h1>A Kid's Castle</h1>
           <h2>Single</h2>
@@ -88,7 +104,7 @@ const Music = () => {
 
 </div>
 
-<div className="portfolio-detail-item portfolio-item-large2">
+<div className="portfolio-detail-item portfolio-item-large2 art">
         <h1></h1>
           <h1>Color The Stars</h1>
           <h2>Single</h2>

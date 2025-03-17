@@ -16,7 +16,7 @@ const Art = () => {
       <img rel="preload" src={art1} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
   
-  <div className="portfolio-detail-item portfolio-item-large2">
+  <div className="portfolio-detail-item portfolio-item-large2 art">
       <h1>'Witnesses'</h1>
           </div>
     
@@ -27,7 +27,7 @@ const Art = () => {
       <img src={AIKIM} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
 
-    <div className="portfolio-detail-item portfolio-item-large2">
+    <div className="portfolio-detail-item portfolio-item-large2 art">
       <h1>'All I Know Is Me'</h1>
       <h2>Artwork I made to accompany a song I was writing entitled 'All I Know Is Me."</h2>
     </div>
