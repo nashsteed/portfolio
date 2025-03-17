@@ -6,6 +6,8 @@ import BB from '../../../assets/images/BB KING.webp'
 
 import BBmock2 from '../../../assets/images/Poster_Wall_Mockup.webp'
 import BB2 from '../../../assets/images/BB KING 2.webp'
+import BB3 from '../../../assets/images/bbking mock.webp'
+import BBgreen from '../../../assets/images/BB KING green.webp'
 
 const MusicPoster = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient
@@ -22,6 +24,11 @@ const MusicPoster = () => {
   <div className="portfolio-detail-item portfolio-item-large2">
       <img src={BBmock2} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
+
+    <div className="portfolio-detail-item portfolio-item-large2">
+      <img src={BB3} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
     
     <div className="portfolio-detail-item portfolio-item-large1col">
       <img src={BB} alt="Portfolio 1" className="portfolio-detail-item" />
@@ -30,6 +37,12 @@ const MusicPoster = () => {
     <div className="portfolio-detail-item portfolio-item-large1col">
       <img src={BB2} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
+
+    <div className="portfolio-detail-item portfolio-item-large1col">
+      <img src={BBgreen} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
+
 
 
 

@@ -11,6 +11,9 @@ import red2 from '../../../assets/images/ATANC MAY/red2.webp'
 import blue1 from '../../../assets/images/ATANC MAY/blue1.webp'
 import blue2 from '../../../assets/images/ATANC MAY/blue2.webp'
 
+import mock1 from '../../../assets/images/ATANC mock.webp'
+import mock2 from '../../../assets/images/ATANC mock2.webp'
+
 const ATANCMay = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient
 
@@ -23,6 +26,10 @@ const ATANCMay = () => {
       <h1>ATANC: National Tennis Month Ads</h1>
       <h2 className="client">Client: Abilities Tennis Association of North Carolina</h2>
       <h2>I volunteer for a tennis organization that provides clinics and tournaments for athletes with intellectual disabilities. I had the opportunity to design these advertisements for them to post on social media and promote playing tennis in the month of May! Abilities Tennis Association of NC serves over 600 athletes with 32 programs across the state of NC. </h2>
+    </div>
+
+    <div className="portfolio-detail-item portfolio-item-large2">
+      <img src={mock1} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
 
     <div className="portfolio-detail-item portfolio-item-large">
@@ -47,6 +54,12 @@ const ATANCMay = () => {
     <div className="portfolio-detail-item portfolio-item-large">
       <img src={blue2} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
+
+    <div className="portfolio-detail-item portfolio-item-large2">
+      <img src={mock2} alt="Portfolio 1" className="portfolio-detail-item" />
+    </div>
+
+    
     
     
 

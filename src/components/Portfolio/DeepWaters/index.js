@@ -20,6 +20,7 @@ import slide13 from '../../../assets/images/DeepWatersSlides/slide13.webp';
 import slide14 from '../../../assets/images/DeepWatersSlides/slide14.webp';
 import slide15 from '../../../assets/images/DeepWatersSlides/slide15.webp';
 import phoneMock from '../../../assets/images/DeepWatersSlides/phoneMock.webp';
+import all3 from '../../../assets/images/deepwatersMOCK3.webp'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -104,6 +105,10 @@ const DeepWaters = () => {
           </FontAwesomeIcon>
         </div>
           <img src={images[currentIndex]} alt="Portfolio" className="portfolio-detail-item" />
+        </div>
+
+        <div className="portfolio-detail-item portfolio-item-large2">
+          <img src={all3}></img>
         </div>
 
         <div className="portfolio-detail-item portfolio-item-large2">

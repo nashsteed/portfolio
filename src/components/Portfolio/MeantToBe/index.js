@@ -9,9 +9,9 @@ import Cinnamon from '../../../assets/images/MeantToBee Cinnamon.webp'
 import StrawberryAd from '../../../assets/images/MeantToBee Ad Strawberry.webp'
 import BlueberryAd from '../../../assets/images/MeantToBee Ad Blueberry.webp'
 import CinnamonAd from '../../../assets/images/MeantToBee Ad Cinnamon.webp'
-import StrawberryBoxes from '../../../assets/images/STRAWBERRY-BOXES.png'
-import BlueberryBoxes from '../../../assets/images/BLUEBERRY-BOXES.png'
-import CinnamonBoxes from '../../../assets/images/CINNAMON-BOXES.png'
+import StrawberryBoxes from '../../../assets/images/STRAWBERRY-BOXES.webp'
+import BlueberryBoxes from '../../../assets/images/BLUEBERRY-BOXES.webp'
+import CinnamonBoxes from '../../../assets/images/CINNAMON-BOXES.webp'
 
 const MeantToBee = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient

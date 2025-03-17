@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 
 // Image imports
-import dogwoodPreview from '../../assets/images/DOGWOOD-PREVIEW.png';
-import meantToBeePreview from '../../assets/images/MEANT-TO-BEE-PREVIEW.png';
-import deepWatersPreview from '../../assets/images/DEEP-WATERS-PREVIEW.png';
-import tennisPreview from '../../assets/images/tennis-previews.png';
-import springPreview from '../../assets/images/SPRING-BREAK-PREVIEW.png';
-import postcardsPreview from '../../assets/images/postcards-preview.png';
-import jamesPreview from '../../assets/images/JAMES-BOND-PREVIEW.png';
+import dogwoodPreview from '../../assets/images/DOGWOOD-PREVIEW.webp';
+import meantToBeePreview from '../../assets/images/MEANT-TO-BEE-PREVIEW.webp';
+import deepWatersPreview from '../../assets/images/DEEP-WATERS-PREVIEW.webp';
+// import tennisPreview from '../../assets/images/tennis-previews.webp';
+import tennisPreview from '../../assets/images/ATANC-PREVIEW2.webp';
+import springPreview from '../../assets/images/SPRING-BREAK-PREVIEW.webp';
+import postcardsPreview from '../../assets/images/postcards-preview.webp';
+import jamesPreview from '../../assets/images/JAMES-BOND-PREVIEW.webp';
 import BBmock2 from '../../assets/images/Poster_Wall_Mockup.webp';
 import shirtDesigns from '../../assets/images/MGCS/banner.webp';
 
@@ -72,9 +73,11 @@ const Portfolio = () => {
           <img ref={setImageRef} src={deepWatersPreview} alt="Deep Waters Project" loading="lazy" />
         </Link>
 
-        <Link to="/portfolio/spring-break" className="portfolio-item portfolio-item-large2">
-          <img ref={setImageRef} src={springPreview} alt="Spring Break" loading="lazy" />
+        <Link to="/portfolio/atanc-national-tennis-month" className="portfolio-item portfolio-item-large2">
+          <img ref={setImageRef} src={tennisPreview} alt="Tennis Project" loading="lazy" />
         </Link>
+
+        
 
         <Link to="/portfolio/james-bond-books" className="portfolio-item portfolio-item-large2">
           <img ref={setImageRef} src={jamesPreview} alt="James Bond Project" loading="lazy" />
@@ -86,13 +89,15 @@ const Portfolio = () => {
           <img ref={setImageRef} src={meantToBeePreview} alt="Meant to Bee Project" loading="lazy" />
         </Link>
 
+        <Link to="/portfolio/spring-break" className="portfolio-item portfolio-item-large2">
+          <img ref={setImageRef} src={springPreview} alt="Spring Break" loading="lazy" />
+        </Link>
+
         <Link to="/portfolio/mgcs-shirts" className="portfolio-item portfolio-item-large2">
           <img ref={setImageRef} src={shirtDesigns} alt="MGCS Shirts" loading="lazy" />
         </Link>
 
-        <Link to="/portfolio/atanc-national-tennis-month" className="portfolio-item portfolio-item-large2">
-          <img ref={setImageRef} src={tennisPreview} alt="Tennis Project" loading="lazy" />
-        </Link>
+        
 
         <Link to="/portfolio/city-postcards" className="portfolio-item portfolio-item-large2">
           <img ref={setImageRef} src={postcardsPreview} alt="City Postcards" loading="lazy" />
