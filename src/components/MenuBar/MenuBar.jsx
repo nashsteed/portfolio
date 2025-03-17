@@ -5,7 +5,7 @@ import { faHome, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import buttonStyles from "../Button/button.scss"
 import nashLogo from "../../assets/images/logoNash.png"
-import nashLogoHome from "../../assets/images/logo nash2.png"
+import nashLogoHome from "../../assets/images/logo nash.png"
 
 
 export const MenuBar = () => {

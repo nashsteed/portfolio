@@ -9,7 +9,7 @@ const Home2 = () => {
   const [letterClass, setLetterClass] = useState('text-hidden') // Start hidden
   const [isLoaded, setIsLoaded] = useState(false) // Track if fully loaded
 
-  const jobArray = ['G', 'R', 'A', 'P', 'H', 'I', 'C', ' ', 'D', 'E', 'S', 'I', 'G', 'N', ',', ' ', 'W', 'E', 'B', ' ', 'D', 'E','V','E','L','O','P','E','R']
+  const jobArray = ['G', 'R', 'A', 'P', 'H', 'I', 'C', ' ', 'D', 'E', 'S', 'I', 'G', 'N','E','R', ' + ', 'W', 'E', 'B', ' ', 'D', 'E','V','E','L','O','P','E','R']
 
   useEffect(() => {
     const timeout = setTimeout(() => {

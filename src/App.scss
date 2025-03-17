@@ -19,6 +19,13 @@ $primary-color: #fff;
 }
 
 @font-face {
+  font-family: 'Intervogue Thin';
+  src: url('./assets/fonts/Inter-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Greycliff Heavy';
   src: url('./assets/fonts/IntervogueSoftAlt-Black.ttf') format('opentype');
   font-weight: normal;

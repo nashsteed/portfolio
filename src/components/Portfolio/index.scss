@@ -1,3 +1,4 @@
+
 .portfolio {
 
   overflow: visible;
@@ -15,14 +16,15 @@
 /* Portfolio Grid Styles */
 .portfolio-grid {
   align-items: start;
-  margin: 20.5rem auto;
+  margin: 17.5rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Flexible columns with min size */
  /* Automatically adjust rows */
   gap: 50px; /* Uniform spacing between grid items */
-  width: 80%;
+  width: 100%;
+  height: auto;
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: 95%;
   overflow-x: hidden; /* Enable vertical scrolling */
   overflow: visible !important;
   opacity: 0;
@@ -42,37 +44,47 @@
   }
 }
 
-
-/* Portfolio Item Styles */
-.portfolio-item {
-  overflow: hidden;
-  position: relative;
-  //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.6s ease-in-out;
-  opacity: 0;
-  cursor: grab;
-  animation: fadeInItem 1s forwards; 
-  overflow-x: hidden;  /* Hide any horizontal overflow */
-  position: relative;/* Fade-in effect for items */
-  align-self: center;
-  height: 100%;
-}
-
-
-
 @keyframes fadeInItem {
   0% {
-    opacity: 0;
+    opacity: 0.1;
   }
   100% {
     opacity: 1;
   }
 }
 
-.portfolio-item.loaded {
+
+/* Portfolio Item Styles */
+.portfolio-item {
   opacity: 1 !important;
+  transition: opacity 1.5s ease-out;
+  overflow: hidden;
+  position: relative;
+  //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease-in-out;
+  cursor: grab;
+  animation: fadeInItem 1s forwards; 
+  overflow-x: hidden;  /* Hide any horizontal overflow */
+  position: relative;/* Fade-in effect for items */
+  align-self: center;
+  height: 100%;
+
+  
+
+}
+
+.portfolio-item.in-view {
+  animation: fadeInItem 1.5s forwards !important;
+  opacity: 1 !important;
+}
+
+
+.portfolio-item.loaded {
   animation: 1 ease-in; /* Make the image visible once it's in view */
 }
+
+
+
 
 /* Portfolio Item Sizes */
 .portfolio-item-large {
@@ -127,6 +139,7 @@
   height: 100%;
   object-fit: contain;
   pointer-events: none;
+  
 }
 
 .portfolio-item .lottie-container {
@@ -140,7 +153,7 @@
 
 /* Hover effect for portfolio items */
 .portfolio-item:hover {
-  transform: scale(1.05); /* Slight zoom effect */
+  transform: scale(1.05gi); /* Slight zoom effect */
 }
 
 /* Responsive Layout for Smaller Screens */

@@ -1,197 +1,103 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './index.scss';
 
-// Images
-import BBmock2 from '../../assets/images/Poster_Wall_Mockup.webp';
-import postcards from '../../assets/images/postcards-mock.webp';
-import goldeneye from '../../assets/images/goldeneyeMock.webp';
-import shirtDesigns from '../../assets/images/MGCS/banner.webp';
-import MeantToBeeStrawberryAd from '../../assets/images/MeantToBee Ad Strawberry.webp';
-import MeantToBeeCinnamonAd from '../../assets/images/MeantToBee Ad Cinnamon.webp';
-import MeantToBeeStrawberry from '../../assets/images/MeantToBee Strawberry.png';
-import deepWatersMock from '../../assets/images/DeepWatersMock.webp';
-import deepWatersPreview from '../../assets/images/DEEP-WATERS-PREVIEW.png';
-import meantToBeePreview from '../../assets/images/MEANT-TO-BEE-PREVIEW.png';
-import postcardsPreview from '../../assets/images/postcards-preview.png';
-import phoneMock from '../../assets/images/DeepWatersSlides/phoneMock.webp';
-import red1 from '../../assets/images/ATANC MAY/red1.webp';
-import blueBlank from '../../assets/images/ATANC MAY/blueBlank.webp';
-import Lottie from 'react-lottie'
-import jamesPreview from '../../assets/images/JAMES-BOND-PREVIEW.png';
+// Image imports
 import dogwoodPreview from '../../assets/images/DOGWOOD-PREVIEW.png';
+import meantToBeePreview from '../../assets/images/MEANT-TO-BEE-PREVIEW.png';
+import deepWatersPreview from '../../assets/images/DEEP-WATERS-PREVIEW.png';
 import tennisPreview from '../../assets/images/tennis-previews.png';
 import springPreview from '../../assets/images/SPRING-BREAK-PREVIEW.png';
-
-
-import businessCards from '../../assets/images/dogwood-business-cards.webp'; 
-
-
+import postcardsPreview from '../../assets/images/postcards-preview.png';
+import jamesPreview from '../../assets/images/JAMES-BOND-PREVIEW.png';
+import BBmock2 from '../../assets/images/Poster_Wall_Mockup.webp';
+import shirtDesigns from '../../assets/images/MGCS/banner.webp';
 
 const Portfolio = () => {
-  const [backgroundClass, setBackgroundClass] = useState('gradient-background');
   const imagesRef = useRef([]);
-  const [loadedImages, setLoadedImages] = useState([]);
-
-
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
-    // Trigger background change after a slight delay
-    setTimeout(() => {
-      setBackgroundClass('gradient-background-second');
-    }, 100);
-
-    const observer = new IntersectionObserver((entries, observerInstance) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.target && !loadedImages.includes(entry.target)) {
-          entry.target.classList.add('loaded');
-          observerInstance.unobserve(entry.target); // Stop observing once loaded
-          setLoadedImages((prev) => [...prev, entry.target]);
+    if (imagesLoaded) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            console.log(`Observed: ${entry.target.alt}, In View: ${entry.isIntersecting}`);
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              console.log(entry.target.classList);
+              observer.unobserve(entry.target); // Stop observing after it appears
+            }
+          });
+        },
+        {
+          threshold: 0.5, // 50% of the parent element must be in view
+          rootMargin: '50px 0px', // Set a small margin to trigger slightly before it enters the viewport
         }
+      );
+
+      // Observe each parent element (link container)
+      imagesRef.current.forEach((image) => {
+        if (image) observer.observe(image.parentElement); // Observe the parent element
       });
-    }, { threshold: 0.5 });
 
-    // Ensure we only observe valid DOM elements
-    imagesRef.current.forEach((image) => {
-      if (image && image instanceof Element) {
-        observer.observe(image);
-      }
-    });
+      return () => observer.disconnect();
+    }
+  }, [imagesLoaded]);
 
-    return () => {
-      observer.disconnect();
-      imagesRef.current = []; // Clean up references on unmount
-    };
-  }, [loadedImages]); // Dependency array to track loaded images
-
-  // Ref callback to push image elements to imagesRef
-  const setImageRef = (el) => {
-    if (el && !imagesRef.current.includes(el)) {
-      imagesRef.current.push(el);
+  const handleImageLoad = () => {
+    // Check if all images have loaded
+    const allImagesLoaded = imagesRef.current.every((el) => el.complete);
+    if (allImagesLoaded) {
+      setImagesLoaded(true); // Set state to true when all images are loaded
     }
   };
 
-  const handleImageLoad = (index) => {
-    setLoadedImages((prev) => [...prev, index]);
+  // Assign images to ref and avoid duplicates
+  const setImageRef = (el) => {
+    if (el && !imagesRef.current.includes(el)) {
+      imagesRef.current.push(el);
+      el.addEventListener('load', handleImageLoad); // Add load event listener to each image
+    }
   };
 
   return (
-    <div className={`portfolio ${backgroundClass}`}>
+    <div className="portfolio">
       <div className="portfolio-grid">
-        
-
         <Link to="/portfolio/dogwood" className="portfolio-item portfolio-item-large2">
-          <img 
-            ref={setImageRef} 
-            src={dogwoodPreview} 
-            alt="Portfolio 1" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(0)} 
-          />
+          <img ref={setImageRef} src={dogwoodPreview} alt="Dogwood Project" loading="lazy" />
         </Link>
 
         <Link to="/portfolio/spring-break" className="portfolio-item portfolio-item-large2">
-          <img 
-            ref={setImageRef} 
-            src={springPreview} 
-            alt="Portfolio 1" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(7)} 
-          />
+          <img ref={setImageRef} src={springPreview} alt="Spring Break" loading="lazy" />
         </Link>
 
         <Link to="/portfolio/james-bond-books" className="portfolio-item portfolio-item-large2">
-          <img 
-            ref={setImageRef} 
-            src={jamesPreview} 
-            alt="Portfolio 1" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(0)} 
-          />
+          <img ref={setImageRef} src={jamesPreview} alt="James Bond Project" loading="lazy" />
         </Link>
 
-
-
-        {/* <Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large">
-        <div className='lottie-container'>
-          <Lottie 
-            options={lottieOptions}
-            alt="Portfolio 1"
-            height={400}
-            loading="lazy"
-            onLoad={() => handleImageLoad(1)} 
-          />
-          </div>
-        </Link> */}
-
-<Link to="/portfolio/deep-waters" className="portfolio-item portfolio-item-large2">
-          <img 
-            ref={setImageRef} 
-            src={deepWatersPreview} 
-            alt="Portfolio 1" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(2)} 
-          />
+        <Link to="/portfolio/deep-waters" className="portfolio-item portfolio-item-large2">
+          <img ref={setImageRef} src={deepWatersPreview} alt="Deep Waters Project" loading="lazy" />
         </Link>
 
-
-<Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large2">
-          <img 
-            ref={setImageRef} 
-            src={meantToBeePreview} 
-            alt="Portfolio 1" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(1)} 
-          />
+        <Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large2">
+          <img ref={setImageRef} src={meantToBeePreview} alt="Meant to Bee Project" loading="lazy" />
         </Link>
-
-        
 
         <Link to="/portfolio/mgcs-shirts" className="portfolio-item portfolio-item-large2">
-          <img 
-            ref={setImageRef} 
-            src={shirtDesigns} 
-            alt="Portfolio 1" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(7)} 
-          />
+          <img ref={setImageRef} src={shirtDesigns} alt="MGCS Shirts" loading="lazy" />
         </Link>
-
-        
-
-        
 
         <Link to="/portfolio/atanc-national-tennis-month" className="portfolio-item portfolio-item-large2">
-          <img 
-            ref={setImageRef} 
-            src={tennisPreview} 
-            alt="Portfolio 2" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(4)} 
-          />
+          <img ref={setImageRef} src={tennisPreview} alt="Tennis Project" loading="lazy" />
         </Link>
-
 
         <Link to="/portfolio/city-postcards" className="portfolio-item portfolio-item-large2">
-          <img 
-            ref={setImageRef} 
-            src={postcardsPreview} 
-            alt="Portfolio 2" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(6)} 
-          />
+          <img ref={setImageRef} src={postcardsPreview} alt="City Postcards" loading="lazy" />
         </Link>
 
-        
-
         <Link to="/portfolio/bb-king-poster" className="portfolio-item portfolio-item-large2">
-          <img 
-            ref={setImageRef} 
-            src={BBmock2} 
-            alt="Portfolio 1" 
-            loading="lazy"
-            onLoad={() => handleImageLoad(8)} 
-          />
+          <img ref={setImageRef} src={BBmock2} alt="BB King Poster" loading="lazy" />
         </Link>
       </div>
     </div>

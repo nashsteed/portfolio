@@ -3,14 +3,40 @@ import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import testBG from '../../assets/images/nashSteed.png';
 import emailjs from '@emailjs/browser';
+import styles from '../Home2/Home2.scss'
+import { useRef } from 'react';
 
 const Contact2 = () => {
+
+  const form = useRef();
+
+  const [status, setStatus] = useState(""); // to track success or error
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_cfybuga', 'template_nw2pmyg', form.current, {
+        publicKey: 'LyZjyMrUUTbdsppkr',
+      })
+      .then(
+        () => {
+          setStatus("success");
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          setStatus("error");
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState(null);
   const [letterClass, setLetterClass] = useState('text-hidden'); // Start hidden
   const [isLoaded, setIsLoaded] = useState(false); // Track if fully loaded
 
-  const jobArray = ['G', 'R', 'A', 'P', 'H', 'I', 'C', ' ', 'D', 'E', 'S', 'I', 'G', 'N', ',', ' ', 'W', 'E', 'B', ' ', 'D', 'E','V','E','L','O','P','E','R']
+  const jobArray = ['G', 'R', 'A', 'P', 'H', 'I', 'C', ' ', 'D', 'E', 'S', 'I', 'G', 'N','E','R',' ', '+', ' ', 'W', 'E', 'B', ' ', 'D', 'E','V','E','L','O','P','E','R']
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -20,67 +46,38 @@ const Contact2 = () => {
     return () => clearTimeout(timeout); // Cleanup timeout
   }, []);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    
-
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        e.target,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setStateMessage('Message sent!');
-          setIsSubmitting(false);
-          setTimeout(() => {
-            setStateMessage(null);
-          }, 5000);
-        },
-        () => {
-          setStateMessage('Something went wrong, please try again later');
-          setIsSubmitting(false);
-          setTimeout(() => {
-            setStateMessage(null);
-          }, 5000);
-        }
-      );
-
-    // Clears the form after sending the email
-    e.target.reset();
-  };
-
   return (
     <>
       <div className="home-page2">
 
-        <img src={testBG} alt="Nash Steed" onLoad={() => setIsLoaded(true)} />
-        {/* <form onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="from_name" required />
-          <label>Email</label>
-          <input type="email" name="to_name" required />
-          <label>Message</label>
-          <textarea name="message" required />
-          <input type="submit" value="Send" disabled={isSubmitting} />
-          {stateMessage && <p>{stateMessage}</p>}
-        </form> */}
+        <img src={testBG} alt="Nash Steed" onLoad={() => setIsLoaded(true)}/>
         {isLoaded && (
           <div>
             <h3>
               <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={4} />
             </h3>
 
-            <div className="flat-square-contact">
+            {/* <div className="flat-square-contact">
                 <h4>EMAIL: </h4>
                   <h4>NASHSTEED.DESIGN@GMAIL.COM</h4>
                 <h4>PHONE:</h4>
                 <h4>804.219.7366</h4>
-                </div>
+                </div> */}
+
+            <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input placeholder="Enter your name" type="text" name="user_name" className='name' />
+      <label>Email</label>
+      <input placeholder="Enter your email" type="email" name="user_email" className='name' />
+      <label>Subject</label>
+      <input placeholder="Enter your subject" type="text" name="title" className='name' />
+      <label>Message</label>
+      <textarea placeholder="Enter your message" name="message" className='message'/>
+      
+      <input className={status === "success" ? "flat-button3 center2 form-button success" : status === "error" ? "flat-button3 center2 form-button error" : "flat-button3 center2 form-button"} type="submit" value={status === "success" ? "Sent!" : status === "error" ? "Error" : "Send"} />
+    </form>
+
+            
 
             {/* <div className="buttons">
               <a href="https://www.linkedin.com/in/nash-steed/" target="_blank" rel="noopener noreferrer" className="flat-button3 right2">
