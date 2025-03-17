@@ -76,6 +76,7 @@ textarea:invalid {
     justify-content: center;
     overflow: hidden;
     align-items: center;
+    padding-bottom: 10rem;
     /* Background Grid */
     .background-image {
       display: flex;
@@ -266,10 +267,10 @@ textarea:invalid {
   
     h3 {
       color: #44487a;
-      font-size: 3rem;
+      font-size: 3.25rem;
       line-height: 53px;
       margin: 0;
-      font-family: 'Nash';
+      font-family: 'Greycliff Heavy';
       font-weight: 400;
       justify-self: center;
       text-align: center;
@@ -328,6 +329,10 @@ textarea:invalid {
       border-radius: 5px;
       white-space: nowrap;
       background-blend-mode:screen !important;
+      display: flex; /* Enables flexbox */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+    text-align: center; 
   
      
   
@@ -399,12 +404,13 @@ textarea:invalid {
       .flat-button3{
         font-size: 4rem;
         align-self: center;
+        align-content: center;
       }
       
     }
 
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1000px) {
 
 
       label {
@@ -425,7 +431,7 @@ textarea:invalid {
       }
 
       h3 {
-        font-size: 1.25rem;
+        font-size: 2.5rem;
         line-height: 4rem;
       }
 
@@ -485,13 +491,13 @@ textarea:invalid {
         }
 
         h3 {
-          font-size: 1.25rem;
+          font-size: 2rem;
           line-height: 4rem;
         }
 
         .form-button {
           font-size: 1.75rem;
-          padding-right: 8rem !important;
+          padding: 1rem 5rem;
         }
 
         input.name {
@@ -524,10 +530,40 @@ textarea:invalid {
 
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
+
+    h3 {
+      font-size: 1.75rem;
+      line-height: 4rem;
+    }
+
+    img{
+        width: 65%;
+    }
+
+
+    h4 {
+        font-size: 1rem;
+        line-height: 3rem;
+      }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+      .flat-button3{
+        font-size: 2rem;
+        align-self: center;
+      }
+      
+    }
+
+
+}
+
+  @media screen and (max-width: 450px) {
 
         h3 {
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           line-height: 4rem;
         }
     

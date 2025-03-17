@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
-import testBG from '../../assets/images/nashSteed.png';
+import testBG from '../../assets/images/nashSteed.webp';
 import label from '../../assets/images/NASH FONT LABEL.png'
 import emailjs from '@emailjs/browser';
 import styles from '../Home2/Home2.scss'
@@ -38,7 +38,7 @@ const Contact2 = () => {
   const [letterClass, setLetterClass] = useState('text-hidden'); // Start hidden
   const [isLoaded, setIsLoaded] = useState(false); // Track if fully loaded
 
-  const jobArray = ['G', 'R', 'A', 'P', 'H', 'I', 'C', ' ', 'D', 'E', 'S', 'I', 'G', 'N','E','R',' ', '+', ' ', 'W', 'E', 'B', ' ', 'D', 'E','V','E','L','O','P','E','R']
+  const jobArray = ['G', 'R', 'A', 'P', 'H', 'I', 'C', ' ', 'D', 'E', 'S', 'I', 'G', 'N','E','R',' ', '&', ' ', 'W', 'E', 'B', ' ', 'D', 'E','V','E','L','O','P','E','R']
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -53,12 +53,13 @@ const Contact2 = () => {
       <div className="home-page2">
 
         <img src={testBG} alt="Nash Steed" onLoad={() => setIsLoaded(true)}/>
-        <img className="label-name" src={label} alt="Nash Steed" onLoad={() => setIsLoaded(true)}/>
+        {/* <img className="label-name" src={label} alt="Nash Steed" onLoad={() => setIsLoaded(true)}/> */}
+        {isLoaded && (<h3>
+              <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={4} />
+            </h3>)}
         {isLoaded && (
           <div className='form-area'>
-            {/* <h3>
-              <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={4} />
-            </h3> */}
+            
 
             {/* <div className="flat-square-contact">
                 <h4>EMAIL: </h4>

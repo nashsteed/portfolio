@@ -21,7 +21,7 @@ const Home2 = () => {
       return () => clearTimeout(timeout) // Cleanup timeout
     }
   }, [isLoaded])
-  
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLetterClass('text-animate') // Apply animation after delay
@@ -54,16 +54,16 @@ const Home2 = () => {
           onLoad={() => setIsLoaded(true)} // Ensure image loads before animation
         />
         <div className="color-overlay"></div>
-        <img className="label-name" 
+        {/* <img className="label-name" 
           src={label} 
           alt="Nash Steed"
           onLoad={() => setIsLoaded(true)} // Ensure image loads before animation
-        />
+        /> */}
         {isLoaded && ( // Ensure animation only starts after image loads
           <div>
-            {/* <h3>
+            <h3>
               <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={4} />
-            </h3> */}
+            </h3>
             <div className='buttons'>
               <Link to="/about" className="flat-button3 left2">About</Link>
               <Link to="/portfolio" className="flat-button3 center2">Portfolio</Link>
