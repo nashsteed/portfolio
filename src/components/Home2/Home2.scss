@@ -315,6 +315,7 @@ textarea:invalid {
       animation: fadeInUp 1.5s forwards;
       display: flex;
       justify-content: center;
+      gap: 4px;
     }
   
     .flat-button3 {
@@ -324,8 +325,8 @@ textarea:invalid {
       letter-spacing: 4px;
       font-family: 'Greycliff Heavy';
       text-decoration: none;
-      padding: 10px 30px;
-      border: 2px solid #e6e6dd;
+      padding: 8px 28px;
+      border: 2px solid transparent;
       border-radius: 5px;
       white-space: nowrap;
       background-blend-mode:screen !important;
