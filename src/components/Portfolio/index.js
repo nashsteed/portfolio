@@ -68,6 +68,10 @@ const Portfolio = () => {
           <img ref={setImageRef} src={dogwoodPreview} alt="Dogwood Project" loading="lazy" />
         </Link>
 
+        <Link to="/portfolio/deep-waters" className="portfolio-item portfolio-item-large2">
+          <img ref={setImageRef} src={deepWatersPreview} alt="Deep Waters Project" loading="lazy" />
+        </Link>
+
         <Link to="/portfolio/spring-break" className="portfolio-item portfolio-item-large2">
           <img ref={setImageRef} src={springPreview} alt="Spring Break" loading="lazy" />
         </Link>
@@ -76,9 +80,7 @@ const Portfolio = () => {
           <img ref={setImageRef} src={jamesPreview} alt="James Bond Project" loading="lazy" />
         </Link>
 
-        <Link to="/portfolio/deep-waters" className="portfolio-item portfolio-item-large2">
-          <img ref={setImageRef} src={deepWatersPreview} alt="Deep Waters Project" loading="lazy" />
-        </Link>
+        
 
         <Link to="/portfolio/meant-to-bee" className="portfolio-item portfolio-item-large2">
           <img ref={setImageRef} src={meantToBeePreview} alt="Meant to Bee Project" loading="lazy" />
