@@ -8,6 +8,29 @@
       opacity: 1;
     }
   }
+
+  .loader {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.8s linear infinite;
+
+  }
+
+  .form-button:hover .loader {
+    border-color: #88A9D6; /* Make spinner blue on hover */
+    border-top-color: transparent;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
   
   @keyframes fadeInBG {
     0% {
@@ -20,6 +43,12 @@
   
   .fadeInUp-animation {
     animation: 1.5s fadeInUp forwards;
+  }
+
+  .label-name {
+    opacity: 0;
+    margin-top: 0rem !important;
+    animation: 1s 1.25s fadeIn forwards !important;
   }
   
   .home-page2 {
@@ -59,6 +88,14 @@
   
   .home-page2 {
     justify-content: center;
+
+    .form-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+    }
   
     img{
 
@@ -66,7 +103,7 @@
         margin-top: 12.5rem;
         height: 100%;
         width: 50%;
-        animation: fadeInUp 1.5s forwards !important;
+        animation: fadeInUp 1.5s forwards;
 
         .contact {
           height: 50%;
@@ -84,7 +121,9 @@
       border-radius: 5px;
       padding-bottom: 10rem;
       background-color: transparent;
-      
+      justify-self: center;
+      align-items: center;
+      width: 35%;
 
     }
 
@@ -92,7 +131,11 @@
       padding: 1rem;
       border-radius: 5px;
       background-color: #44487a;
+      width: 100%;
+      justify-self: center;
     }
+
+    
 
     input, textarea {
       background-color: #88A9D6;
@@ -103,6 +146,8 @@
       padding-left: 1rem;
       font-size: 3rem;
       outline: none;
+      width: 95%;
+      justify-self: center;
       
     }
 
@@ -114,7 +159,9 @@
       height: 5rem;
       font-size: 23px;
       justify-self: center;
+      justify-content: center;
       cursor: pointer;
+      padding-right: 2rem;
     }
 
     input::placeholder, textarea::placeholder {
@@ -123,7 +170,13 @@
     }
 
     .success {
-      background-color:green !important;
+      background-color:#06BA63 !important;
+      color: white !important;
+      border: none !important;
+    }
+
+    .error {
+      background-color:#EE4266 !important;
       color: white !important;
       border: none !important;
     }
@@ -190,10 +243,10 @@
   
     h3 {
       color: #44487a;
-      font-size: 3.5rem;
+      font-size: 3rem;
       line-height: 53px;
       margin: 0;
-      font-family: 'Greycliff Heavy';
+      font-family: 'Nash';
       font-weight: 400;
       justify-self: center;
       text-align: center;
@@ -327,6 +380,66 @@
       
     }
 
+
+    @media screen and (max-width: 1200px) {
+
+
+      label {
+        font-size: 2.5rem;
+      }
+
+      form {
+        width: 50%;
+      }
+
+      input{
+        font-size: 2.5rem;
+        width: 95%;
+      }
+
+      textarea.message {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        line-height: 4rem;
+      }
+
+      .form-button {
+        font-size: 2.5rem;
+      }
+
+      input.name {
+        padding: 1rem;
+        height: 2rem;
+        font-size: 2.5rem;
+      }
+
+  
+      img{
+          width: 65%;
+      }
+  
+
+      h4 {
+          font-size: 1rem;
+          line-height: 3rem;
+        }
+  
+      .buttons {
+          display: flex;
+          flex-direction: column;
+        .flat-button3{
+          font-size: 2rem;
+          align-self: center;
+        }
+        
+      }
+
+
+}
+
     @media screen and (max-width: 700px) {
 
 
@@ -334,8 +447,18 @@
           font-size: 1.75rem;
         }
 
-        input {
+        form {
+          width: 50%;
+        }
+
+        input{
           font-size: 1.75rem;
+          width: 90%;
+        }
+
+        textarea.message {
+          font-size: 1rem;
+          width: 90%;
         }
 
         h3 {
@@ -344,12 +467,14 @@
         }
 
         .form-button {
-          width: 50%;
           font-size: 1.75rem;
+          padding-right: 8rem !important;
         }
 
         input.name {
           padding: 1rem;
+          height: 2rem;
+          font-size: 1.25rem;
         }
 
     
