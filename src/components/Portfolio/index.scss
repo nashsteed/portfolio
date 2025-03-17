@@ -44,6 +44,17 @@
   }
 }
 
+@keyframes fadeInUp2 {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 @keyframes fadeInItem {
   0% {
     opacity: 0.1;
@@ -56,27 +67,42 @@
 
 /* Portfolio Item Styles */
 .portfolio-item {
-  opacity: 1 !important;
   transition: opacity 1.5s ease-out;
   overflow: hidden;
   position: relative;
   //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.6s ease-in-out;
   cursor: grab;
-  animation: fadeInItem 1s forwards; 
   overflow-x: hidden;  /* Hide any horizontal overflow */
   position: relative;/* Fade-in effect for items */
   align-self: center;
   height: 100%;
+  opacity: 0; /* Start hidden */
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  
 
   
 
 }
 
-.portfolio-item.in-view {
-  animation: fadeInItem 1.5s forwards !important;
-  opacity: 1 !important;
+@keyframes fadeInItem {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: transformX(0);
+    opacity: 1;
+  }
 }
+
+
+
+
+.portfolio-item.in-view {/* Make visible */
+
+  animation: fadeInUp2 0.25s forwards;
+}
+
 
 
 .portfolio-item.loaded {
