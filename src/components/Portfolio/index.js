@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import "./index.scss";
 
@@ -28,6 +29,28 @@ const portfolioItems = [
 ];
 
 const Portfolio = () => {
+
+  const [allLoaded, setAllLoaded] = useState(false);
+  const loadedImages = useRef(0);
+
+  useEffect(() => {
+    const handleImageLoad = () => {
+      loadedImages.current += 1;
+      if (loadedImages.current === portfolioItems.length) {
+        setTimeout(() => {
+          setAllLoaded(true); // Delay visibility slightly
+        }, 500);
+      }
+    };
+
+    // Preload all images
+    portfolioItems.forEach((item) => {
+      const img = new Image();
+      img.src = item.src;
+      img.onload = handleImageLoad;
+    });
+  }, []);
+
   return (
     <div className="portfolio">
       <div className="portfolio-grid">

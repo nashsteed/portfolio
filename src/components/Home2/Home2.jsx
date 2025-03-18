@@ -25,7 +25,7 @@ const Home2 = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLetterClass('text-animate') // Apply animation after delay
-    }, 500) // Adjust delay as needed
+    }, 750) // Adjust delay as needed
 
     return () => clearTimeout(timeout) // Cleanup timeout
   }, [])
