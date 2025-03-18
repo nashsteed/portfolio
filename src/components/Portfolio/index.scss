@@ -24,7 +24,7 @@
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  max-width: 95%;
+  max-width: 85%;
   overflow-x: hidden; /* Enable vertical scrolling */
   overflow: visible !important;
   opacity: 0;
@@ -68,7 +68,6 @@
 /* Portfolio Item Styles */
 .portfolio-item {
   transition: opacity 1.5s ease-out;
-  overflow: hidden;
   position: relative;
   //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.6s ease-in-out;
@@ -165,6 +164,7 @@
   height: 100%;
   object-fit: contain;
   pointer-events: none;
+  cursor: pointer;
   
 }
 
@@ -179,7 +179,7 @@
 
 /* Hover effect for portfolio items */
 .portfolio-item:hover {
-  transform: scale(1.05gi); /* Slight zoom effect */
+  transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Responsive Layout for Smaller Screens */
