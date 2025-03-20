@@ -17,15 +17,15 @@ import shirtDesigns from "../../assets/images/MGCS/banner.webp";
 
 // Portfolio items list
 const portfolioItems = [
-  { src: dogwoodPreview, alt: "Dogwood Project", link: "/portfolio/dogwood" },
-  { src: deepWatersPreview, alt: "Deep Waters Project", link: "/portfolio/deep-waters" },
-  { src: tennisPreview, alt: "Tennis Project", link: "/portfolio/atanc-national-tennis-month" },
-  { src: jamesPreview, alt: "James Bond Project", link: "/portfolio/james-bond-books" },
-  { src: meantToBeePreview, alt: "Meant to Bee Project", link: "/portfolio/meant-to-bee" },
-  { src: springPreview, alt: "Spring Break", link: "/portfolio/spring-break" },
+  { src: dogwoodPreview, alt: "Dogwood Logo Redesign", link: "/portfolio/dogwood" },
+  { src: deepWatersPreview, alt: "Deep Waters Application Design", link: "/portfolio/deep-waters" },
+  { src: meantToBeePreview, alt: "Meant to Bee Brand Design", link: "/portfolio/meant-to-bee" },
+  { src: tennisPreview, alt: "ATANC Tennis Month Ads", link: "/portfolio/atanc-national-tennis-month" },
+  { src: jamesPreview, alt: "James Bond Books", link: "/portfolio/james-bond-books" },
+  { src: springPreview, alt: "Spring Break Booklets", link: "/portfolio/spring-break" },
   { src: shirtDesigns, alt: "MGCS Shirts", link: "/portfolio/mgcs-shirts" },
   { src: postcardsPreview, alt: "City Postcards", link: "/portfolio/city-postcards" },
-  { src: BBmock2, alt: "BB King Poster", link: "/portfolio/bb-king-poster" },
+  { src: BBmock2, alt: "BB King Concert Posters", link: "/portfolio/bb-king-poster" },
 ];
 
 const Portfolio = () => {
@@ -39,7 +39,7 @@ const Portfolio = () => {
       if (loadedImages.current === portfolioItems.length) {
         setTimeout(() => {
           setAllLoaded(true); // Delay visibility slightly
-        }, 500);
+        }, 1000);
       }
     };
 
@@ -50,7 +50,7 @@ const Portfolio = () => {
       img.onload = handleImageLoad;
     });
   }, []);
-
+  
   return (
     <div className="portfolio">
       <div className="portfolio-grid">
@@ -79,7 +79,7 @@ const PortfolioItem = ({ item }) => {
         });
       },
       {
-        threshold: 0.05, // Trigger when 20% of the item is visible
+        threshold: 0.025, // Trigger when 20% of the item is visible
       }
     );
 
@@ -91,6 +91,8 @@ const PortfolioItem = ({ item }) => {
   return (
     <Link to={item.link} className="portfolio-item portfolio-item-large2" ref={ref}>
       <img src={item.src} alt={item.alt} loading="lazy" />
+      <div className="overlay">
+        <h1>{item.alt}</h1></div> {/* Overlay text */}
     </Link>
   );
 };

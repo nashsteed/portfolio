@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import { useRef } from 'react'
 import Home from './components/Home'
 import Layout from './components/Layout'
 import Contact from './components/Contact'
@@ -26,6 +27,12 @@ import SpringBreak from './components/Portfolio/SpringBreak/SpringBreak'
 
 function App() {
 
+  const portfolioRef = useRef(null);
+
+  const scrollToPortfolio = () => {
+    portfolioRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   const location = useLocation();
 
   useEffect(() => {
@@ -36,10 +43,12 @@ function App() {
   return (
     <>
     <ScrollToTop/>
+    
       <Routes>
         
         <Route path="/" element={<Layout />}>
           <Route index element={<Home2 />} />
+          
           <Route path ="contact" index element={<Contact2 />} />
           <Route path ="resume" index element={<Resume />} />
           <Route path ="portfolio" index element={<Portfolio />} />
