@@ -25,7 +25,7 @@ const portfolioItems = [
   { src: springPreview, alt: "Spring Break Booklets", link: "/portfolio/spring-break" },
   { src: shirtDesigns, alt: "MGCS Shirts", link: "/portfolio/mgcs-shirts" },
   { src: postcardsPreview, alt: "City Postcards", link: "/portfolio/city-postcards" },
-  { src: BBmock2, alt: "BB King Concert Posters", link: "/portfolio/bb-king-poster" },
+  { src: BBmock2, alt: "B.B. King Concert Posters", link: "/portfolio/bb-king-poster" },
 ];
 
 const Portfolio = () => {
