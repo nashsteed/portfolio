@@ -19,7 +19,7 @@ import shirtDesigns from "../../assets/images/MGCS/banner.webp";
 const portfolioItems = [
   { src: dogwoodPreview, alt: "Dogwood Logo Redesign", link: "/portfolio/dogwood" },
   { src: deepWatersPreview, alt: "Deep Waters Application Design", link: "/portfolio/deep-waters" },
-  { src: meantToBeePreview, alt: "Meant to Bee Brand Design", link: "/portfolio/meant-to-bee" },
+  { src: meantToBeePreview, alt: "Meant To Bee Brand & WordPress Site", link: "/portfolio/meant-to-bee" },
   { src: tennisPreview, alt: "ATANC Tennis Month Ads", link: "/portfolio/atanc-national-tennis-month" },
   { src: jamesPreview, alt: "James Bond Books", link: "/portfolio/james-bond-books" },
   { src: springPreview, alt: "Spring Break Booklets", link: "/portfolio/spring-break" },

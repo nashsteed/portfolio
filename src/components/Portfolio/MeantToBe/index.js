@@ -12,6 +12,7 @@ import CinnamonAd from '../../../assets/images/MeantToBee Ad Cinnamon.webp'
 import StrawberryBoxes from '../../../assets/images/STRAWBERRY-BOXES.webp'
 import BlueberryBoxes from '../../../assets/images/BLUEBERRY-BOXES.webp'
 import CinnamonBoxes from '../../../assets/images/CINNAMON-BOXES.webp'
+import VideoFile from '../../../assets/images/MEANTTOBEE WEBSITE.mp4'
 
 const MeantToBee = () => {
   const [backgroundClass, setBackgroundClass] = useState('gradient-background-second'); // Start with the first gradient
@@ -20,8 +21,15 @@ const MeantToBee = () => {
     <div className={`portfolio ${backgroundClass}`}>
   <div className="portfolio-item-grid">
 
-  
+  <div className="portfolio-detail-item portfolio-item-large2">
+  <video className="portfolio-video" controls autoplay muted loop>
+            <source src={VideoFile} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
 
+    </div>
+  
+  
     
 
   <div className="portfolio-detail-item portfolio-item-large">
