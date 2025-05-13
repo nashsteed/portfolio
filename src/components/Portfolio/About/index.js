@@ -5,7 +5,7 @@ import '../../../components/Portfolio/Postcards/index.scss'
 import  '../../Contact/index.scss'
 import './aboutButton.scss'
 
-import gradPhoto from '../../../assets/images/gradphoto.webp'
+import bostonPhoto from '../../../assets/images/boston.jpeg'
 
 
 const About = () => {
@@ -16,7 +16,7 @@ const About = () => {
   <div className="portfolio-item-grid about">
 
   <div className="portfolio-detail-item portfolio-item-large fadeInUp-animation">
-      <img src={gradPhoto} alt="Portfolio 1" className="portfolio-detail-item" />
+      <img src={bostonPhoto} alt="Portfolio 1" className="portfolio-detail-item" />
     </div>
 
   <div className="portfolio-detail-item portfolio-item-large" align-self="center" >
