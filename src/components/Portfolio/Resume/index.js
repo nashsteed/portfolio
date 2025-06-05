@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
 import '../../../components/Portfolio/Postcards/index.scss'
-import resume from '../../../assets/images/NashSteedResume.png'
+import resume from '../../../assets/images/ResumeNashSteed.png'
 
 import gradPhoto from '../../../assets/images/gradphoto.webp'
 
